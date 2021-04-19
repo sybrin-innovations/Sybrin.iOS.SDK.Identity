@@ -1,0 +1,518 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Sybrin_iOS_Identity
+import AVFoundation
+import Foundation
+import MLKit
+import Swift
+import Sybrin_iOS_Common
+@_exported import Sybrin_iOS_Identity
+import UIKit
+@_inheritsConvenienceInitializers @objc final public class SouthAfricaGreenBookModel : Sybrin_iOS_Identity.GreenBookModel {
+  @objc final public var identityNumberDateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var identityNumberSex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var identityNumberCitizenship: Sybrin_iOS_Identity.CitizenshipType {
+    @objc get
+  }
+  @objc final public var identityNumberADigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc final public class KenyaIDCardModel : Sybrin_iOS_Identity.IDCardModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine3: Swift.String? {
+    @objc get
+  }
+  @objc final public var serialNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var serialNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData1: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalData2: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class PassportModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc public var passportType: Swift.String? {
+    @objc get
+  }
+  @objc public var issuingCountryCode: Swift.String? {
+    @objc get
+  }
+  @objc public var surname: Swift.String? {
+    @objc get
+  }
+  @objc public var names: Swift.String? {
+    @objc get
+  }
+  @objc public var passportNumber: Swift.String? {
+    @objc get
+  }
+  @objc public var nationality: Swift.String? {
+    @objc get
+  }
+  @objc public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Country : Swift.Int, Swift.CaseIterable {
+  case Kenya
+  case Philippines
+  case SouthAfrica
+  case Zimbabwe
+  public var fullName: Swift.String {
+    get
+  }
+  public var idCardCountryCode: Swift.String {
+    get
+  }
+  public var passportCountryCode: Swift.String {
+    get
+  }
+  public var isoCode: Swift.String {
+    get
+  }
+  public var supportedDocuments: [Sybrin_iOS_Identity.DocumentType] {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [Sybrin_iOS_Identity.Country]
+  public static var allCases: [Sybrin_iOS_Identity.Country] {
+    get
+  }
+}
+@objc public enum Sex : Swift.Int, Swift.Encodable {
+  case Male
+  case Female
+  case Undetermined
+  public var stringValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GreenBookType : Swift.Int, Swift.Encodable {
+  case Bilingual
+  case English
+  case Unspecified
+  public var stringValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class SybrinIdentity : ObjectiveC.NSObject {
+  @objc public static let shared: Sybrin_iOS_Identity.SybrinIdentity
+  @objc final public var configuration: Sybrin_iOS_Identity.SybrinIdentityConfiguration? {
+    @objc get
+    @objc set
+  }
+  public typealias doneLaunchingType = (Swift.Bool, Swift.String?) -> Swift.Void
+  public typealias failureCallbackType = (Swift.String) -> Swift.Void
+  public typealias cancelCallbackType = () -> Swift.Void
+  public typealias documentSuccessCallbackType = (Sybrin_iOS_Identity.DocumentModel) -> Swift.Void
+  public typealias greenBookSuccessCallbackType = (Sybrin_iOS_Identity.GreenBookModel) -> Swift.Void
+  public typealias idCardSuccessCallbackType = (Sybrin_iOS_Identity.IDCardModel) -> Swift.Void
+  public typealias passportSuccessCallbackType = (Sybrin_iOS_Identity.PassportModel) -> Swift.Void
+  @objc final public func changeLogLevel(to logLevel: Sybrin_iOS_Common.LogLevel)
+  @objc final public func scanDocument(on viewController: UIKit.UIViewController, for document: Sybrin_iOS_Identity.Document, doneLaunching: Sybrin_iOS_Identity.SybrinIdentity.doneLaunchingType? = nil, success: Sybrin_iOS_Identity.SybrinIdentity.documentSuccessCallbackType? = nil, failure: Sybrin_iOS_Identity.SybrinIdentity.failureCallbackType? = nil, cancel: Sybrin_iOS_Identity.SybrinIdentity.cancelCallbackType? = nil)
+  @objc final public func scanGreenBook(on viewController: UIKit.UIViewController, doneLaunching: Sybrin_iOS_Identity.SybrinIdentity.doneLaunchingType? = nil, success: Sybrin_iOS_Identity.SybrinIdentity.greenBookSuccessCallbackType? = nil, failure: Sybrin_iOS_Identity.SybrinIdentity.failureCallbackType? = nil, cancel: Sybrin_iOS_Identity.SybrinIdentity.cancelCallbackType? = nil)
+  @objc final public func scanIDCard(on viewController: UIKit.UIViewController, for country: Sybrin_iOS_Identity.Country, doneLaunching: Sybrin_iOS_Identity.SybrinIdentity.doneLaunchingType? = nil, success: Sybrin_iOS_Identity.SybrinIdentity.idCardSuccessCallbackType? = nil, failure: Sybrin_iOS_Identity.SybrinIdentity.failureCallbackType? = nil, cancel: Sybrin_iOS_Identity.SybrinIdentity.cancelCallbackType? = nil)
+  @objc final public func scanPassport(on viewController: UIKit.UIViewController, for country: Sybrin_iOS_Identity.Country, doneLaunching: Sybrin_iOS_Identity.SybrinIdentity.doneLaunchingType? = nil, success: Sybrin_iOS_Identity.SybrinIdentity.passportSuccessCallbackType? = nil, failure: Sybrin_iOS_Identity.SybrinIdentity.failureCallbackType? = nil, cancel: Sybrin_iOS_Identity.SybrinIdentity.cancelCallbackType? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class GreenBookModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc public var surname: Swift.String? {
+    @objc get
+  }
+  @objc public var firstNames: Swift.String? {
+    @objc get
+  }
+  @objc public var countryOfBirth: Swift.String? {
+    @objc get
+  }
+  @objc public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc public var dateIssued: Foundation.Date? {
+    @objc get
+  }
+  @objc public var bookType: Sybrin_iOS_Identity.GreenBookType {
+    @objc get
+  }
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class ZimbabwePassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var identityNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum CitizenshipType : Swift.Int, Swift.Encodable {
+  case Citizen
+  case PermanentResident
+  case Unknown
+  public var stringValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class SybrinIdentityConfiguration : ObjectiveC.NSObject, Sybrin_iOS_Common.SybrinCommonConfiguration {
+  @objc final public var license: Swift.String {
+    @objc get
+  }
+  @objc final public var overlayColor: UIKit.UIColor
+  @objc final public var overlayLabelTextColor: UIKit.UIColor
+  @objc final public var overlaySubLabelTextColor: UIKit.UIColor
+  @objc final public var overlayBorderColor: UIKit.UIColor
+  @objc final public var overlayBorderThickness: CoreGraphics.CGFloat
+  @objc final public var overlayBorderLength: CoreGraphics.CGFloat
+  @objc final public var overlayBlurStyle: UIKit.UIBlurEffect.Style
+  @objc final public var overlayBlurIntensity: CoreGraphics.CGFloat
+  @objc final public var cameraPosition: AVFoundation.AVCaptureDevice.Position
+  @objc final public var overlayBrandingTitleText: Swift.String
+  @objc final public var overlayBrandingTitleColor: UIKit.UIColor
+  @objc final public var overlayBrandingSubtitleText: Swift.String
+  @objc final public var overlayBrandingSubtitleColor: UIKit.UIColor
+  @objc final public var enableBackButton: Swift.Bool
+  @objc final public var enableSwipeRightGesture: Swift.Bool
+  @objc final public var showFlashButton: Swift.Bool
+  @objc final public var saveImages: Swift.Bool
+  @objc final public var cutoutCornerRadius: CoreGraphics.CGFloat
+  @objc final public var enableMultiPhaseVerification: Swift.Bool
+  @objc final public var enableHelpMessages: Swift.Bool
+  @objc public init(license: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum DocumentType : Swift.Int {
+  case GreenBook
+  case IDCard
+  case Passport
+  public var stringValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum Document : Swift.Int {
+  case KenyaIDCard
+  case PhilippinesPassport
+  case SouthAfricaGreenBook
+  case SouthAfricaIDCard
+  case SouthAfricaPassport
+  case ZimbabwePassport
+  public var country: Sybrin_iOS_Identity.Country {
+    get
+  }
+  public var documentType: Sybrin_iOS_Identity.DocumentType {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class SouthAfricaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var identityNumberDateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var identityNumberSex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var identityNumberCitizenship: Sybrin_iOS_Identity.CitizenshipType {
+    @objc get
+  }
+  @objc final public var identityNumberADigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumberPassportCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class SouthAfricaIDCardModel : Sybrin_iOS_Identity.IDCardModel {
+  @objc final override public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var surname: Swift.String? {
+    @objc get
+  }
+  @objc final public var names: Swift.String? {
+    @objc get
+  }
+  @objc final public var identityNumberDateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var identityNumberSex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var identityNumberCitizenship: Sybrin_iOS_Identity.CitizenshipType {
+    @objc get
+  }
+  @objc final public var identityNumberADigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var identityNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var countryOfBirth: Swift.String? {
+    @objc get
+  }
+  @objc final public var citizenship: Sybrin_iOS_Identity.CitizenshipType {
+    @objc get
+  }
+  @objc final public var dateIssued: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var rsaCode: Swift.String? {
+    @objc get
+  }
+  @objc final public var cardNumber: Swift.String? {
+    @objc get
+  }
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DocumentModel : ObjectiveC.NSObject, Swift.Encodable {
+  @objc public var portraitImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var documentImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var croppedDocumentImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var portraitImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public var documentImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public var croppedDocumentImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public func saveImages()
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class IDCardModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc public var nationality: Swift.String? {
+    @objc get
+  }
+  @objc public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc public var portraitBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var documentBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var croppedDocumentBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var portraitBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public var documentBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public var croppedDocumentBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc override public func saveImages()
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class SouthAfricaIdentityNumber : ObjectiveC.NSObject {
+  @objc final public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var citizenship: Sybrin_iOS_Identity.CitizenshipType {
+    @objc get
+  }
+  @objc final public var aDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var checkDigit: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Sybrin_iOS_Identity.Country : Swift.Equatable {}
+extension Sybrin_iOS_Identity.Country : Swift.Hashable {}
+extension Sybrin_iOS_Identity.Country : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.Sex : Swift.Equatable {}
+extension Sybrin_iOS_Identity.Sex : Swift.Hashable {}
+extension Sybrin_iOS_Identity.Sex : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.GreenBookType : Swift.Equatable {}
+extension Sybrin_iOS_Identity.GreenBookType : Swift.Hashable {}
+extension Sybrin_iOS_Identity.GreenBookType : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.CitizenshipType : Swift.Equatable {}
+extension Sybrin_iOS_Identity.CitizenshipType : Swift.Hashable {}
+extension Sybrin_iOS_Identity.CitizenshipType : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.DocumentType : Swift.Equatable {}
+extension Sybrin_iOS_Identity.DocumentType : Swift.Hashable {}
+extension Sybrin_iOS_Identity.DocumentType : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.Document : Swift.Equatable {}
+extension Sybrin_iOS_Identity.Document : Swift.Hashable {}
+extension Sybrin_iOS_Identity.Document : Swift.RawRepresentable {}

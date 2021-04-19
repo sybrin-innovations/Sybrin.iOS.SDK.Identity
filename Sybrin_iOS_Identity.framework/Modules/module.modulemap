@@ -1,0 +1,11 @@
+framework module Sybrin_iOS_Identity {
+  umbrella header "Sybrin_iOS_Identity.h"
+
+  export *
+  module * { export * }
+}
+
+module Sybrin_iOS_Identity.Swift {
+    header "Sybrin_iOS_Identity-Swift.h"
+    requires objc
+}
