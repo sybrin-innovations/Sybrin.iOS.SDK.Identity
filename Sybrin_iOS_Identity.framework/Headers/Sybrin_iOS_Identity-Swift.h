@@ -218,19 +218,30 @@ typedef SWIFT_ENUM(NSInteger, CitizenshipType, open) {
 };
 
 typedef SWIFT_ENUM(NSInteger, Country, open) {
-  CountryKenya = 0,
-  CountryPhilippines = 1,
-  CountrySouthAfrica = 2,
-  CountryZimbabwe = 3,
+  CountryGhana = 0,
+  CountryKenya = 1,
+  CountryMalawi = 2,
+  CountryMozambique = 3,
+  CountryPhilippines = 4,
+  CountrySouthAfrica = 5,
+  CountryZimbabwe = 6,
 };
 
 typedef SWIFT_ENUM(NSInteger, Document, open) {
-  DocumentKenyaIDCard = 0,
-  DocumentPhilippinesPassport = 1,
-  DocumentSouthAfricaGreenBook = 2,
-  DocumentSouthAfricaIDCard = 3,
-  DocumentSouthAfricaPassport = 4,
-  DocumentZimbabwePassport = 5,
+  DocumentGhanaPassport = 0,
+  DocumentKenyaIDCard = 1,
+  DocumentKenyaPassport = 2,
+  DocumentMalawiPassport = 3,
+  DocumentMozambiqueIDCard = 4,
+  DocumentMozambiquePassport = 5,
+  DocumentPhilippinesDriversLicense = 6,
+  DocumentPhilippinesIDCard = 7,
+  DocumentPhilippinesPassport = 8,
+  DocumentSouthAfricaDriversLicense = 9,
+  DocumentSouthAfricaGreenBook = 10,
+  DocumentSouthAfricaIDCard = 11,
+  DocumentSouthAfricaPassport = 12,
+  DocumentZimbabwePassport = 13,
 };
 
 @class UIImage;
@@ -248,10 +259,51 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity13DocumentModel")
 @end
 
 typedef SWIFT_ENUM(NSInteger, DocumentType, open) {
-  DocumentTypeGreenBook = 0,
-  DocumentTypeIDCard = 1,
-  DocumentTypePassport = 2,
+  DocumentTypeDriversLicense = 0,
+  DocumentTypeGreenBook = 1,
+  DocumentTypeIDCard = 2,
+  DocumentTypePassport = 3,
 };
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity19DriversLicenseModel")
+@interface DriversLicenseModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable licenseNumber;
+@property (nonatomic, readonly, strong) UIImage * _Nullable documentBackImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable croppedDocumentBackImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentBackImagePath;
+@property (nonatomic, readonly, copy) NSString * _Nullable croppedDocumentBackImagePath;
+- (void)saveImages;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+enum Sex : NSInteger;
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity13PassportModel")
+@interface PassportModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable passportType;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuingCountryCode;
+@property (nonatomic, readonly, copy) NSString * _Nullable surname;
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable nationality;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
+@property (nonatomic, readonly) enum Sex sex;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity18GhanaPassportModel")
+@interface GhanaPassportModel : PassportModel
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
+@property (nonatomic, readonly) NSInteger passportNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfBirthCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfExpiryCheckDigit;
+@property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 enum GreenBookType : NSInteger;
 
@@ -273,7 +325,6 @@ typedef SWIFT_ENUM(NSInteger, GreenBookType, open) {
   GreenBookTypeUnspecified = 2,
 };
 
-enum Sex : NSInteger;
 
 SWIFT_CLASS("_TtC19Sybrin_iOS_Identity11IDCardModel")
 @interface IDCardModel : DocumentModel
@@ -310,17 +361,105 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity16KenyaIDCardModel")
 @end
 
 
-SWIFT_CLASS("_TtC19Sybrin_iOS_Identity13PassportModel")
-@interface PassportModel : DocumentModel
-@property (nonatomic, readonly, copy) NSString * _Nullable passportType;
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity18KenyaPassportModel")
+@interface KenyaPassportModel : PassportModel
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
+@property (nonatomic, readonly) NSInteger passportNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfBirthCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfExpiryCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable optionalData;
+@property (nonatomic, readonly) NSInteger optionalDataCheckDigit;
+@property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity19MalawiPassportModel")
+@interface MalawiPassportModel : PassportModel
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
+@property (nonatomic, readonly) NSInteger passportNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfBirthCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfExpiryCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable personalNumber;
+@property (nonatomic, readonly) NSInteger personalNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity21MozambiqueIDCardModel")
+@interface MozambiqueIDCardModel : IDCardModel
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine3;
 @property (nonatomic, readonly, copy) NSString * _Nullable issuingCountryCode;
+@property (nonatomic, readonly) NSInteger identityNumberCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable optionalData1;
+@property (nonatomic, readonly) NSInteger dateOfBirthCheckDigit;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly) NSInteger dateOfExpiryCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable optionalData2;
+@property (nonatomic, readonly) NSInteger compositeCheckDigit;
 @property (nonatomic, readonly, copy) NSString * _Nullable surname;
 @property (nonatomic, readonly, copy) NSString * _Nullable names;
-@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity23MozambiquePassportModel")
+@interface MozambiquePassportModel : PassportModel
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
+@property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
+@property (nonatomic, readonly) NSInteger passportNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfBirthCheckDigit;
+@property (nonatomic, readonly) NSInteger dateOfExpiryCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable identityNumber;
+@property (nonatomic, readonly) NSInteger identityNumberCheckDigit;
+@property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity30PhilippinesDriversLicenseModel")
+@interface PhilippinesDriversLicenseModel : DriversLicenseModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable surname;
 @property (nonatomic, readonly, copy) NSString * _Nullable nationality;
-@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
 @property (nonatomic, readonly) enum Sex sex;
-@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
+@property (nonatomic, readonly) double weight;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly, copy) NSString * _Nullable address;
+@property (nonatomic, readonly, copy) NSDate * _Nullable expirationDate;
+@property (nonatomic, readonly, copy) NSString * _Nullable agencyCode;
+@property (nonatomic, readonly, copy) NSString * _Nullable bloodType;
+@property (nonatomic, readonly, copy) NSString * _Nullable eyeColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable restrictions;
+@property (nonatomic, readonly, copy) NSString * _Nullable conditions;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcode;
+@property (nonatomic, readonly, copy) NSString * _Nullable serialNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable fullName;
+@property (nonatomic, readonly, strong) UIImage * _Nullable barcodeBackImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable barcodeImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeBackImagePath;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeImagePath;
+- (void)saveImages;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity22PhilippinesIDCardModel")
+@interface PhilippinesIDCardModel : IDCardModel
+@property (nonatomic, readonly, copy) NSString * _Nullable commonReferenceNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable fullName;
+@property (nonatomic, readonly, copy) NSString * _Nullable surname;
+@property (nonatomic, readonly, copy) NSString * _Nullable givenName;
+@property (nonatomic, readonly, copy) NSString * _Nullable middleName;
+@property (nonatomic, readonly, copy) NSString * _Nullable address;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -341,6 +480,37 @@ typedef SWIFT_ENUM(NSInteger, Sex, open) {
   SexFemale = 1,
   SexUndetermined = 2,
 };
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity30SouthAfricaDriversLicenseModel")
+@interface SouthAfricaDriversLicenseModel : DriversLicenseModel
+@property (nonatomic, readonly, copy) NSString * _Nullable identityNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable identityNumberDateOfBirth;
+@property (nonatomic, readonly) enum Sex identityNumberSex;
+@property (nonatomic, readonly) enum CitizenshipType identityNumberCitizenship;
+@property (nonatomic, readonly) NSInteger identityNumberADigit;
+@property (nonatomic, readonly) NSInteger identityNumberCheckDigit;
+@property (nonatomic, readonly, copy) NSString * _Nullable initials;
+@property (nonatomic, readonly, copy) NSString * _Nullable surname;
+@property (nonatomic, readonly) enum Sex sex;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable vehicleCodes;
+@property (nonatomic, readonly, copy) NSString * _Nullable prdpCode;
+@property (nonatomic, readonly, copy) NSString * _Nullable idCountryOfIssue;
+@property (nonatomic, readonly, copy) NSString * _Nullable licenseCountryOfIssue;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable vehicleRestrictions;
+@property (nonatomic, readonly, copy) NSString * _Nullable idNumberType;
+@property (nonatomic, readonly, copy) NSString * _Nullable driverRestrictions;
+@property (nonatomic, readonly, copy) NSDate * _Nullable prdpExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable licenseIssueNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validTo;
+@property (nonatomic, readonly, copy) NSArray<NSDate *> * _Nullable issueDates;
+@property (nonatomic, readonly, strong) UIImage * _Nullable barcodeImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeImagePath;
+- (void)saveImages;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC19Sybrin_iOS_Identity25SouthAfricaGreenBookModel")
@@ -369,18 +539,6 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity22SouthAfricaIDCardModel")
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateIssued;
 @property (nonatomic, readonly, copy) NSString * _Nullable rsaCode;
 @property (nonatomic, readonly, copy) NSString * _Nullable cardNumber;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC19Sybrin_iOS_Identity25SouthAfricaIdentityNumber")
-@interface SouthAfricaIdentityNumber : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable identityNumber;
-@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
-@property (nonatomic, readonly) enum Sex sex;
-@property (nonatomic, readonly) enum CitizenshipType citizenship;
-@property (nonatomic, readonly) NSInteger aDigit;
-@property (nonatomic, readonly) NSInteger checkDigit;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -415,6 +573,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) SybrinIdenti
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)changeLogLevelTo:(enum LogLevel)logLevel;
 - (void)scanDocumentOn:(UIViewController * _Nonnull)viewController for:(enum Document)document doneLaunching:(void (^ _Nullable)(BOOL, NSString * _Nullable))doneLaunching success:(void (^ _Nullable)(DocumentModel * _Nonnull))success failure:(void (^ _Nullable)(NSString * _Nonnull))failure cancel:(void (^ _Nullable)(void))cancel;
+- (void)scanDriversLicenseOn:(UIViewController * _Nonnull)viewController for:(enum Country)country doneLaunching:(void (^ _Nullable)(BOOL, NSString * _Nullable))doneLaunching success:(void (^ _Nullable)(DriversLicenseModel * _Nonnull))success failure:(void (^ _Nullable)(NSString * _Nonnull))failure cancel:(void (^ _Nullable)(void))cancel;
 - (void)scanGreenBookOn:(UIViewController * _Nonnull)viewController doneLaunching:(void (^ _Nullable)(BOOL, NSString * _Nullable))doneLaunching success:(void (^ _Nullable)(GreenBookModel * _Nonnull))success failure:(void (^ _Nullable)(NSString * _Nonnull))failure cancel:(void (^ _Nullable)(void))cancel;
 - (void)scanIDCardOn:(UIViewController * _Nonnull)viewController for:(enum Country)country doneLaunching:(void (^ _Nullable)(BOOL, NSString * _Nullable))doneLaunching success:(void (^ _Nullable)(IDCardModel * _Nonnull))success failure:(void (^ _Nullable)(NSString * _Nonnull))failure cancel:(void (^ _Nullable)(void))cancel;
 - (void)scanPassportOn:(UIViewController * _Nonnull)viewController for:(enum Country)country doneLaunching:(void (^ _Nullable)(BOOL, NSString * _Nullable))doneLaunching success:(void (^ _Nullable)(PassportModel * _Nonnull))success failure:(void (^ _Nullable)(NSString * _Nonnull))failure cancel:(void (^ _Nullable)(void))cancel;
