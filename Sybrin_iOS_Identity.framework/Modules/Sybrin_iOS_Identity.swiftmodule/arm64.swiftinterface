@@ -80,6 +80,56 @@ import UIKit
   @objc deinit
   @objc override dynamic public init()
 }
+@_inheritsConvenienceInitializers @objc final public class UgandaIDCardModel : Sybrin_iOS_Identity.IDCardModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine3: Swift.String? {
+    @objc get
+  }
+  @objc final public var issuingCountryCode: Swift.String? {
+    @objc get
+  }
+  @objc final public var cardNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var cardNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData1: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalData2: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateIssued: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var surname: Swift.String? {
+    @objc get
+  }
+  @objc final public var names: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class PhilippinesPassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
     @objc get
@@ -180,6 +230,7 @@ import UIKit
   case Mozambique
   case Philippines
   case SouthAfrica
+  case Uganda
   case Zimbabwe
   public var fullName: Swift.String {
     get
@@ -322,6 +373,35 @@ import UIKit
     get
   }
 }
+@_inheritsConvenienceInitializers @objc final public class UgandaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+  @objc override dynamic public init()
+}
 @objc final public class SybrinIdentityConfiguration : ObjectiveC.NSObject, Sybrin_iOS_Common.SybrinCommonConfiguration {
   @objc final public var license: Swift.String {
     @objc get
@@ -378,6 +458,8 @@ import UIKit
   case SouthAfricaGreenBook
   case SouthAfricaIDCard
   case SouthAfricaPassport
+  case UgandaIDCard
+  case UgandaPassport
   case ZimbabwePassport
   public var country: Sybrin_iOS_Identity.Country {
     get
@@ -483,7 +565,7 @@ import UIKit
   @objc final public var address: Swift.String? {
     @objc get
   }
-  @objc final public var barcode: Swift.String? {
+  @objc final public var barcodeData: Swift.String? {
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
@@ -506,10 +588,10 @@ import UIKit
   @objc final public var dateOfBirth: Foundation.Date? {
     @objc get
   }
-  @objc final public var weight: Swift.Double {
+  @objc final public var weight: Swift.Float {
     @objc get
   }
-  @objc final public var height: Swift.Double {
+  @objc final public var height: Swift.Float {
     @objc get
   }
   @objc final public var address: Swift.String? {
@@ -533,7 +615,7 @@ import UIKit
   @objc final public var conditions: Swift.String? {
     @objc get
   }
-  @objc final public var barcode: Swift.String? {
+  @objc final public var barcodeData: Swift.String? {
     @objc get
   }
   @objc final public var serialNumber: Swift.String? {
@@ -542,16 +624,16 @@ import UIKit
   @objc final public var fullName: Swift.String? {
     @objc get
   }
-  @objc final public var barcodeBackImage: UIKit.UIImage? {
-    @objc get
-  }
   @objc final public var barcodeImage: UIKit.UIImage? {
     @objc get
   }
-  @objc final public var barcodeBackImagePath: Swift.String? {
+  @objc final public var croppedDocumentBackImage: UIKit.UIImage? {
     @objc get
   }
   @objc final public var barcodeImagePath: Swift.String? {
+    @objc get
+  }
+  @objc final public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
   @objc final override public func saveImages()
@@ -629,7 +711,13 @@ import UIKit
   @objc final public var barcodeImage: UIKit.UIImage? {
     @objc get
   }
+  @objc final public var croppedDocumentBackImage: UIKit.UIImage? {
+    @objc get
+  }
   @objc final public var barcodeImagePath: Swift.String? {
+    @objc get
+  }
+  @objc final public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
   @objc final override public func saveImages()
@@ -785,13 +873,7 @@ import UIKit
   @objc public var documentBackImage: UIKit.UIImage? {
     @objc get
   }
-  @objc public var croppedDocumentBackImage: UIKit.UIImage? {
-    @objc get
-  }
   @objc public var documentBackImagePath: Swift.String? {
-    @objc get
-  }
-  @objc public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
   @objc override public func saveImages()
