@@ -415,6 +415,7 @@ import UIKit
   @objc final public var overlayBlurStyle: UIKit.UIBlurEffect.Style
   @objc final public var overlayBlurIntensity: CoreGraphics.CGFloat
   @objc final public var cameraPosition: AVFoundation.AVCaptureDevice.Position
+  @objc final public var environmentKey: Swift.String
   @objc final public var overlayBrandingTitleText: Swift.String
   @objc final public var overlayBrandingTitleColor: UIKit.UIColor
   @objc final public var overlayBrandingSubtitleText: Swift.String

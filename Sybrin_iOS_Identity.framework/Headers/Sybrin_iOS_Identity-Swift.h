@@ -597,6 +597,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) enum UIBlurEffectStyle overlayBlurStyle;
 @property (nonatomic) CGFloat overlayBlurIntensity;
 @property (nonatomic) enum AVCaptureDevicePosition cameraPosition;
+@property (nonatomic, copy) NSString * _Nonnull environmentKey;
 @property (nonatomic, copy) NSString * _Nonnull overlayBrandingTitleText;
 @property (nonatomic, strong) UIColor * _Nonnull overlayBrandingTitleColor;
 @property (nonatomic, copy) NSString * _Nonnull overlayBrandingSubtitleText;
