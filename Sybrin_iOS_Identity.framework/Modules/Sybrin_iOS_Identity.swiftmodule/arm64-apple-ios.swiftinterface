@@ -423,6 +423,7 @@ import UIKit
   @objc final public var enableBackButton: Swift.Bool
   @objc final public var enableSwipeRightGesture: Swift.Bool
   @objc final public var showFlashButton: Swift.Bool
+  @objc final public var displayToastMessages: Swift.Bool
   @objc final public var saveImages: Swift.Bool
   @objc final public var cutoutCornerRadius: CoreGraphics.CGFloat
   @objc final public var enableMultiPhaseVerification: Swift.Bool

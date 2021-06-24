@@ -605,6 +605,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) BOOL enableBackButton;
 @property (nonatomic) BOOL enableSwipeRightGesture;
 @property (nonatomic) BOOL showFlashButton;
+@property (nonatomic) BOOL displayToastMessages;
 @property (nonatomic) BOOL saveImages;
 @property (nonatomic) CGFloat cutoutCornerRadius;
 @property (nonatomic) BOOL enableMultiPhaseVerification;
