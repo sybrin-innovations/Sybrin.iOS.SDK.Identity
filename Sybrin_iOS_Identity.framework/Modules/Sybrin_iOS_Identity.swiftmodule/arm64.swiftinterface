@@ -1,13 +1,40 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Sybrin_iOS_Identity
 import AVFoundation
+import CoreGraphics
 import Foundation
 import MLKit
 import Swift
 import Sybrin_iOS_Common
 @_exported import Sybrin_iOS_Identity
 import UIKit
+@_inheritsConvenienceInitializers @objc final public class PhilippinesFirearmsLicenseModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var licenseToOwnAndPossessFirearmNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var qualification: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateApproved: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateExpiry: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var otherLicenses: Swift.String? {
+    @objc get
+  }
+  @objc final public var address: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class SouthAfricaGreenBookModel : Sybrin_iOS_Identity.GreenBookModel {
   @objc final public var identityNumberDateOfBirth: Foundation.Date? {
     @objc get
@@ -48,8 +75,40 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesProfessionalRegulationCommissionCardModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var lastName: Swift.String? {
+    @objc get
+  }
+  @objc final public var firstName: Swift.String? {
+    @objc get
+  }
+  @objc final public var middleInitialName: Swift.String? {
+    @objc get
+  }
+  @objc final public var registrationNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var registrationDate: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var validUntil: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var profession: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateIssued: Foundation.Date? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class MozambiquePassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
@@ -77,8 +136,8 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class UgandaIDCardModel : Sybrin_iOS_Identity.IDCardModel {
   @objc final public var mrzLine1: Swift.String? {
@@ -150,8 +209,8 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class KenyaIDCardModel : Sybrin_iOS_Identity.IDCardModel {
   @objc final public var mrzLine1: Swift.String? {
@@ -188,8 +247,8 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PassportModel : Sybrin_iOS_Identity.DocumentModel {
   @objc public var passportType: Swift.String? {
@@ -247,13 +306,13 @@ import UIKit
   public var supportedDocuments: [Sybrin_iOS_Identity.DocumentType] {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
+  public typealias AllCases = [Sybrin_iOS_Identity.Country]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Sybrin_iOS_Identity.Country] {
     get
   }
-  public typealias AllCases = [Sybrin_iOS_Identity.Country]
-  public static var allCases: [Sybrin_iOS_Identity.Country] {
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -264,11 +323,81 @@ import UIKit
   public var stringValue: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesPostalIDModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var postalReferenceNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var address: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var validUntil: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var nationality: Swift.String? {
+    @objc get
+  }
+  @objc final public var issuingPostOffice: Swift.String? {
+    @objc get
+  }
+  @objc final public var cardType: Swift.String {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesSeafarerIdentificationRecordBookModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var placeOfBirth: Swift.String? {
+    @objc get
+  }
+  @objc final public var height: Swift.Float {
+    @objc get
+  }
+  @objc final public var weight: Swift.Float {
+    @objc get
+  }
+  @objc final public var eyeColor: Swift.String? {
+    @objc get
+  }
+  @objc final public var hairColor: Swift.String? {
+    @objc get
+  }
+  @objc final public var distinguishingMarks: Swift.String? {
+    @objc get
+  }
+  @objc final public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var dateOfIssue: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var placeOfIssue: Swift.String? {
+    @objc get
+  }
+  @objc final public var validUntil: Foundation.Date? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum GreenBookType : Swift.Int, Swift.Encodable {
   case Bilingual
@@ -277,8 +406,8 @@ import UIKit
   public var stringValue: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -357,8 +486,8 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum CitizenshipType : Swift.Int, Swift.Encodable {
   case Citizen
@@ -367,8 +496,8 @@ import UIKit
   public var stringValue: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -399,8 +528,8 @@ import UIKit
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc final public class SybrinIdentityConfiguration : ObjectiveC.NSObject, Sybrin_iOS_Common.SybrinCommonConfiguration {
   @objc final public var license: Swift.String {
@@ -429,24 +558,71 @@ import UIKit
   @objc final public var enableMultiPhaseVerification: Swift.Bool
   @objc final public var enableHelpMessages: Swift.Bool
   @objc public init(license: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@objc public enum DocumentType : Swift.Int {
+@objc public enum DocumentType : Swift.Int, Swift.CaseIterable {
   case DriversLicense
   case GreenBook
   case IDCard
   case Passport
+  case FirearmsLicense
+  case IntegratedBarID
+  case PhilHealthInsuranceCard
+  case PostalID
+  case ProfessionalRegulationCommissionCard
+  case SeafarerIdentificationDocument
+  case SeafarerIdentificationRecordBook
+  case SocialSecurityID
+  case UnifiedMultipurposeID
   public var stringValue: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Sybrin_iOS_Identity.DocumentType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Sybrin_iOS_Identity.DocumentType] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc public enum Document : Swift.Int {
+@_inheritsConvenienceInitializers @objc final public class PhilippinesIntegratedBarIDModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var rollOfAttorneysNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var integratedBarPhilippinesChapter: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesPhilHealthInsuranceCardModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var philHealthNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var address: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Document : Swift.Int, Swift.CaseIterable {
   case GhanaPassport
   case KenyaIDCard
   case KenyaPassport
@@ -454,8 +630,16 @@ import UIKit
   case MozambiqueIDCard
   case MozambiquePassport
   case PhilippinesDriversLicense
-  case PhilippinesIDCard
+  case PhilippinesFirearmsLicense
+  case PhilippinesIntegratedBarID
   case PhilippinesPassport
+  case PhilippinesPhilHealthInsuranceCard
+  case PhilippinesPostalID
+  case PhilippinesProfessionalRegulationCommissionCard
+  case PhilippinesSeafarerIdentificationDocument
+  case PhilippinesSeafarerIdentificationRecordBook
+  case PhilippinesSocialSecurityID
+  case PhilippinesUnifiedMultipurposeID
   case SouthAfricaDriversLicense
   case SouthAfricaGreenBook
   case SouthAfricaIDCard
@@ -463,14 +647,21 @@ import UIKit
   case UgandaIDCard
   case UgandaPassport
   case ZimbabwePassport
+  public var name: Swift.String {
+    get
+  }
   public var country: Sybrin_iOS_Identity.Country {
     get
   }
   public var documentType: Sybrin_iOS_Identity.DocumentType {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Sybrin_iOS_Identity.Document]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Sybrin_iOS_Identity.Document] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }
@@ -548,11 +739,8 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class PhilippinesIDCardModel : Sybrin_iOS_Identity.IDCardModel {
+@_inheritsConvenienceInitializers @objc final public class PhilippinesUnifiedMultipurposeIDModel : Sybrin_iOS_Identity.DocumentModel {
   @objc final public var commonReferenceNumber: Swift.String? {
-    @objc get
-  }
-  @objc final override public var fullName: Swift.String? {
     @objc get
   }
   @objc final public var surname: Swift.String? {
@@ -564,10 +752,13 @@ import UIKit
   @objc final public var middleName: Swift.String? {
     @objc get
   }
-  @objc final public var address: Swift.String? {
+  @objc final public var sex: Sybrin_iOS_Identity.Sex {
     @objc get
   }
-  @objc final public var barcodeData: Swift.String? {
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var address: Swift.String? {
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
@@ -578,7 +769,7 @@ import UIKit
   @objc final public var names: Swift.String? {
     @objc get
   }
-  @objc final public var surname: Swift.String? {
+  @objc final public var lastName: Swift.String? {
     @objc get
   }
   @objc final public var nationality: Swift.String? {
@@ -724,8 +915,8 @@ import UIKit
   }
   @objc final override public func saveImages()
   final override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class SouthAfricaPassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
@@ -765,6 +956,74 @@ import UIKit
     @objc get
   }
   @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesSeafarerIdentificationDocumentModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine3: Swift.String? {
+    @objc get
+  }
+  @objc final public var documentType: Swift.String? {
+    @objc get
+  }
+  @objc final public var issuingCountryCode: Swift.String? {
+    @objc get
+  }
+  @objc final public var identityNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var identityNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData1: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var sex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var nationality: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalData2: Swift.String? {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var surname: Swift.String? {
+    @objc get
+  }
+  @objc final public var names: Swift.String? {
+    @objc get
+  }
+  @objc final public var portraitBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc final public var documentBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc final public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
@@ -880,6 +1139,20 @@ import UIKit
   }
   @objc override public func saveImages()
   override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesSocialSecurityIDModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var socialSecurityNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit
 }
