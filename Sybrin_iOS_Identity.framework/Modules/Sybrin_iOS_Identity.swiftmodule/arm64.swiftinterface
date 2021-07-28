@@ -1017,6 +1017,15 @@ import UIKit
   @objc final public var names: Swift.String? {
     @objc get
   }
+  @objc final public var portraitBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc final public var documentBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc final public var croppedDocumentBackImage: UIKit.UIImage? {
+    @objc get
+  }
   @objc final public var portraitBackImagePath: Swift.String? {
     @objc get
   }
@@ -1026,6 +1035,7 @@ import UIKit
   @objc final public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
+  @objc final override public func saveImages()
   final override public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit

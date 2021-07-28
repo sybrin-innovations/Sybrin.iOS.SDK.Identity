@@ -565,9 +565,13 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity46PhilippinesSeafarerIdentificationDocumen
 @property (nonatomic, readonly) NSInteger compositeCheckDigit;
 @property (nonatomic, readonly, copy) NSString * _Nullable surname;
 @property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, strong) UIImage * _Nullable portraitBackImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable documentBackImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable croppedDocumentBackImage;
 @property (nonatomic, readonly, copy) NSString * _Nullable portraitBackImagePath;
 @property (nonatomic, readonly, copy) NSString * _Nullable documentBackImagePath;
 @property (nonatomic, readonly, copy) NSString * _Nullable croppedDocumentBackImagePath;
+- (void)saveImages;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
