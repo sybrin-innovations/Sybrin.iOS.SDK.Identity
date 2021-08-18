@@ -450,22 +450,10 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity30PhilippinesDriversLicenseModel")
 @property (nonatomic, readonly, copy) NSString * _Nullable nationality;
 @property (nonatomic, readonly) enum Sex sex;
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
-@property (nonatomic, readonly) float weight;
-@property (nonatomic, readonly) float height;
 @property (nonatomic, readonly, copy) NSString * _Nullable address;
 @property (nonatomic, readonly, copy) NSDate * _Nullable expirationDate;
 @property (nonatomic, readonly, copy) NSString * _Nullable agencyCode;
-@property (nonatomic, readonly, copy) NSString * _Nullable bloodType;
-@property (nonatomic, readonly, copy) NSString * _Nullable eyeColor;
-@property (nonatomic, readonly, copy) NSString * _Nullable restrictions;
-@property (nonatomic, readonly, copy) NSString * _Nullable conditions;
-@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
-@property (nonatomic, readonly, copy) NSString * _Nullable serialNumber;
 @property (nonatomic, readonly, copy) NSString * _Nullable fullName;
-@property (nonatomic, readonly, strong) UIImage * _Nullable barcodeImage;
-@property (nonatomic, readonly, strong) UIImage * _Nullable croppedDocumentBackImage;
-@property (nonatomic, readonly, copy) NSString * _Nullable barcodeImagePath;
-@property (nonatomic, readonly, copy) NSString * _Nullable croppedDocumentBackImagePath;
 - (void)saveImages;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

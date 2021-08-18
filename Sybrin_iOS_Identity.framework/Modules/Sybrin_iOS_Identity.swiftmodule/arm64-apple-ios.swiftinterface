@@ -781,12 +781,6 @@ import UIKit
   @objc final public var dateOfBirth: Foundation.Date? {
     @objc get
   }
-  @objc final public var weight: Swift.Float {
-    @objc get
-  }
-  @objc final public var height: Swift.Float {
-    @objc get
-  }
   @objc final public var address: Swift.String? {
     @objc get
   }
@@ -796,37 +790,7 @@ import UIKit
   @objc final public var agencyCode: Swift.String? {
     @objc get
   }
-  @objc final public var bloodType: Swift.String? {
-    @objc get
-  }
-  @objc final public var eyeColor: Swift.String? {
-    @objc get
-  }
-  @objc final public var restrictions: Swift.String? {
-    @objc get
-  }
-  @objc final public var conditions: Swift.String? {
-    @objc get
-  }
-  @objc final public var barcodeData: Swift.String? {
-    @objc get
-  }
-  @objc final public var serialNumber: Swift.String? {
-    @objc get
-  }
   @objc final public var fullName: Swift.String? {
-    @objc get
-  }
-  @objc final public var barcodeImage: UIKit.UIImage? {
-    @objc get
-  }
-  @objc final public var croppedDocumentBackImage: UIKit.UIImage? {
-    @objc get
-  }
-  @objc final public var barcodeImagePath: Swift.String? {
-    @objc get
-  }
-  @objc final public var croppedDocumentBackImagePath: Swift.String? {
     @objc get
   }
   @objc final override public func saveImages()
