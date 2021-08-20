@@ -55,6 +55,35 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class PakistanPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class GhanaPassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
     @objc get
@@ -69,6 +98,64 @@ import UIKit
     @objc get
   }
   @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class BotswanaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class AngolaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
     @objc get
   }
   @objc final public var compositeCheckDigit: Swift.Int {
@@ -282,14 +369,88 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class LesothoPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class NigeriaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum Country : Swift.Int, Swift.CaseIterable {
+  case Angola
+  case Bangladesh
+  case Botswana
+  case DemocraticRepublicOfTheCongo
+  case Egypt
+  case Ethiopia
+  case Generic
   case Ghana
   case Kenya
+  case Lesotho
   case Malawi
+  case Mauritius
   case Mozambique
+  case Namibia
+  case Nigeria
+  case Pakistan
   case Philippines
+  case Somalia
   case SouthAfrica
+  case Tanzania
   case Uganda
+  case UnitedKingdom
+  case Zambia
   case Zimbabwe
   public var fullName: Swift.String {
     get
@@ -358,6 +519,64 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class GenericPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class DemocraticRepublicOfTheCongoPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class PhilippinesSeafarerIdentificationRecordBookModel : Sybrin_iOS_Identity.DocumentModel {
   @objc final public var fullName: Swift.String? {
     @objc get
@@ -393,6 +612,93 @@ import UIKit
     @objc get
   }
   @objc final public var validUntil: Foundation.Date? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class TanzaniaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class MauritiusPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class BangladeshPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
     @objc get
   }
   final override public func encode(to encoder: Swift.Encoder) throws
@@ -531,6 +837,64 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class EthiopiaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class ZambiaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc final public class SybrinIdentityConfiguration : ObjectiveC.NSObject, Sybrin_iOS_Common.SybrinCommonConfiguration {
   @objc final public var license: Swift.String {
     @objc get
@@ -558,6 +922,35 @@ import UIKit
   @objc final public var enableMultiPhaseVerification: Swift.Bool
   @objc final public var enableHelpMessages: Swift.Bool
   @objc public init(license: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class SomaliaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit
 }
@@ -623,12 +1016,24 @@ import UIKit
   @objc deinit
 }
 @objc public enum Document : Swift.Int, Swift.CaseIterable {
+  case AngolaPassport
+  case BangladeshPassport
+  case BotswanaPassport
+  case DemocraticRepublicOfTheCongoPassport
+  case EgyptPassport
+  case EthiopiaPassport
+  case GenericPassport
   case GhanaPassport
   case KenyaIDCard
   case KenyaPassport
+  case LesothoPassport
   case MalawiPassport
+  case MauritiusPassport
   case MozambiqueIDCard
   case MozambiquePassport
+  case NamibiaPassport
+  case NigeriaPassport
+  case PakistanPassport
   case PhilippinesDriversLicense
   case PhilippinesFirearmsLicense
   case PhilippinesIntegratedBarID
@@ -640,12 +1045,16 @@ import UIKit
   case PhilippinesSeafarerIdentificationRecordBook
   case PhilippinesSocialSecurityID
   case PhilippinesUnifiedMultipurposeID
+  case SomaliaPassport
   case SouthAfricaDriversLicense
   case SouthAfricaGreenBook
   case SouthAfricaIDCard
   case SouthAfricaPassport
+  case TanzaniaPassport
   case UgandaIDCard
   case UgandaPassport
+  case UnitedKingdomPassport
+  case ZambiaPassport
   case ZimbabwePassport
   public var name: Swift.String {
     get
@@ -798,6 +1207,35 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class NamibiaPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class SouthAfricaDriversLicenseModel : Sybrin_iOS_Identity.DriversLicenseModel {
   @objc final public var identityNumber: Swift.String? {
     @objc get
@@ -917,6 +1355,35 @@ import UIKit
     @objc get
   }
   @objc final public var identityNumberPassportCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class EgyptPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
     @objc get
   }
   @objc final public var compositeCheckDigit: Swift.Int {
@@ -1166,6 +1633,35 @@ import UIKit
   }
   @objc override public func saveImages()
   override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class UnitedKingdomPassportModel : Sybrin_iOS_Identity.PassportModel {
+  @objc final public var mrzLine1: Swift.String? {
+    @objc get
+  }
+  @objc final public var mrzLine2: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumberCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfBirthCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var dateOfExpiryCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var optionalData: Swift.String? {
+    @objc get
+  }
+  @objc final public var optionalDataCheckDigit: Swift.Int {
+    @objc get
+  }
+  @objc final public var compositeCheckDigit: Swift.Int {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit
 }
