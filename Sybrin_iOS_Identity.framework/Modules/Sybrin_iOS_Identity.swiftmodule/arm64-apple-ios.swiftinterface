@@ -666,9 +666,6 @@ import UIKit
   @objc final public var validFrom: Foundation.Date? {
     @objc get
   }
-  @objc final public var referenceNumber: Swift.String? {
-    @objc get
-  }
   @objc final public var dateOfExpiry: Foundation.Date? {
     @objc get
   }

@@ -949,7 +949,6 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SouthAfricaStudyPermitModel")
 @property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
 @property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
 @property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
-@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
 @property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
 @property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
