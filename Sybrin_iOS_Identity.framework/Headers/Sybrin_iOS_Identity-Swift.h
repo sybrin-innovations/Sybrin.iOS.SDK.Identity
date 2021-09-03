@@ -364,15 +364,19 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentPhilippinesUnifiedMultipurposeID = 28,
   DocumentSomaliaPassport = 29,
   DocumentSouthAfricaDriversLicense = 30,
-  DocumentSouthAfricaGreenBook = 31,
-  DocumentSouthAfricaIDCard = 32,
-  DocumentSouthAfricaPassport = 33,
-  DocumentTanzaniaPassport = 34,
-  DocumentUgandaIDCard = 35,
-  DocumentUgandaPassport = 36,
-  DocumentUnitedKingdomPassport = 37,
-  DocumentZambiaPassport = 38,
-  DocumentZimbabwePassport = 39,
+  DocumentSouthAfricaGeneralWorkVisa = 31,
+  DocumentSouthAfricaGreenBook = 32,
+  DocumentSouthAfricaIDCard = 33,
+  DocumentSouthAfricaPassport = 34,
+  DocumentSouthAfricaRetiredPersonVisa = 35,
+  DocumentSouthAfricaStudyPermit = 36,
+  DocumentSouthAfricaVisitorVisa = 37,
+  DocumentTanzaniaPassport = 38,
+  DocumentUgandaIDCard = 39,
+  DocumentUgandaPassport = 40,
+  DocumentUnitedKingdomPassport = 41,
+  DocumentZambiaPassport = 42,
+  DocumentZimbabwePassport = 43,
 };
 
 
@@ -381,15 +385,16 @@ typedef SWIFT_ENUM(NSInteger, DocumentType, open) {
   DocumentTypeGreenBook = 1,
   DocumentTypeIDCard = 2,
   DocumentTypePassport = 3,
-  DocumentTypeFirearmsLicense = 4,
-  DocumentTypeIntegratedBarID = 5,
-  DocumentTypePhilHealthInsuranceCard = 6,
-  DocumentTypePostalID = 7,
-  DocumentTypeProfessionalRegulationCommissionCard = 8,
-  DocumentTypeSeafarerIdentificationDocument = 9,
-  DocumentTypeSeafarerIdentificationRecordBook = 10,
-  DocumentTypeSocialSecurityID = 11,
-  DocumentTypeUnifiedMultipurposeID = 12,
+  DocumentTypeVisa = 4,
+  DocumentTypeFirearmsLicense = 5,
+  DocumentTypeIntegratedBarID = 6,
+  DocumentTypePhilHealthInsuranceCard = 7,
+  DocumentTypePostalID = 8,
+  DocumentTypeProfessionalRegulationCommissionCard = 9,
+  DocumentTypeSeafarerIdentificationDocument = 10,
+  DocumentTypeSeafarerIdentificationRecordBook = 11,
+  DocumentTypeSocialSecurityID = 12,
+  DocumentTypeUnifiedMultipurposeID = 13,
 };
 
 
@@ -779,6 +784,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity48PhilippinesSeafarerIdentificationRecordB
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateOfIssue;
 @property (nonatomic, readonly, copy) NSString * _Nullable placeOfIssue;
 @property (nonatomic, readonly, copy) NSDate * _Nullable validUntil;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentNumber;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -858,6 +864,21 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity30SouthAfricaDriversLicenseModel")
 @end
 
 
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity31SouthAfricaGeneralWorkVisaModel")
+@interface SouthAfricaGeneralWorkVisaModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
+@property (nonatomic, readonly, copy) NSDate * _Nullable on;
+@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
+@property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC19Sybrin_iOS_Identity25SouthAfricaGreenBookModel")
 @interface SouthAfricaGreenBookModel : GreenBookModel
 @property (nonatomic, readonly, copy) NSDate * _Nullable identityNumberDateOfBirth;
@@ -903,6 +924,51 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity24SouthAfricaPassportModel")
 @property (nonatomic, readonly) NSInteger identityNumberCheckDigit;
 @property (nonatomic, readonly) NSInteger identityNumberPassportCheckDigit;
 @property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity33SouthAfricaRetiredPersonVisaModel")
+@interface SouthAfricaRetiredPersonVisaModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
+@property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SouthAfricaStudyPermitModel")
+@interface SouthAfricaStudyPermitModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
+@property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SouthAfricaVisitorVisaModel")
+@interface SouthAfricaVisitorVisaModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
+@property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
