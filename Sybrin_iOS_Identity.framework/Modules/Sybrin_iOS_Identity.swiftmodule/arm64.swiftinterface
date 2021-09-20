@@ -168,6 +168,24 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class GenericIDCardModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var frontResult: Swift.String? {
+    @objc get
+  }
+  @objc final public var backResult: Swift.String? {
+    @objc get
+  }
+  @objc final public var documentBackImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc final public var documentBackImagePath: Swift.String? {
+    @objc get
+  }
+  @objc override final public func saveImages()
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class AngolaPassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
     @objc get
@@ -653,6 +671,14 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class GenericDocumentModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var result: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class SouthAfricaStudyPermitModel : Sybrin_iOS_Identity.DocumentModel {
   @objc final public var names: Swift.String? {
     @objc get
@@ -1083,6 +1109,7 @@ import UIKit
   @objc deinit
 }
 @objc public enum DocumentType : Swift.Int, Swift.CaseIterable {
+  case Document
   case DriversLicense
   case GreenBook
   case IDCard
@@ -1151,6 +1178,8 @@ import UIKit
   case DemocraticRepublicOfTheCongoPassport
   case EgyptPassport
   case EthiopiaPassport
+  case GenericDocument
+  case GenericIDCard
   case GenericPassport
   case GhanaPassport
   case KenyaIDCard

@@ -339,62 +339,65 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentDemocraticRepublicOfTheCongoPassport = 3,
   DocumentEgyptPassport = 4,
   DocumentEthiopiaPassport = 5,
-  DocumentGenericPassport = 6,
-  DocumentGhanaPassport = 7,
-  DocumentKenyaIDCard = 8,
-  DocumentKenyaPassport = 9,
-  DocumentLesothoPassport = 10,
-  DocumentMalawiPassport = 11,
-  DocumentMauritiusPassport = 12,
-  DocumentMozambiqueIDCard = 13,
-  DocumentMozambiquePassport = 14,
-  DocumentNamibiaPassport = 15,
-  DocumentNigeriaPassport = 16,
-  DocumentPakistanPassport = 17,
-  DocumentPhilippinesDriversLicense = 18,
-  DocumentPhilippinesFirearmsLicense = 19,
-  DocumentPhilippinesIntegratedBarID = 20,
-  DocumentPhilippinesPassport = 21,
-  DocumentPhilippinesPhilHealthInsuranceCard = 22,
-  DocumentPhilippinesPostalID = 23,
-  DocumentPhilippinesProfessionalRegulationCommissionCard = 24,
-  DocumentPhilippinesSeafarerIdentificationDocument = 25,
-  DocumentPhilippinesSeafarerIdentificationRecordBook = 26,
-  DocumentPhilippinesSocialSecurityID = 27,
-  DocumentPhilippinesUnifiedMultipurposeID = 28,
-  DocumentSomaliaPassport = 29,
-  DocumentSouthAfricaDriversLicense = 30,
-  DocumentSouthAfricaGeneralWorkVisa = 31,
-  DocumentSouthAfricaGreenBook = 32,
-  DocumentSouthAfricaIDCard = 33,
-  DocumentSouthAfricaPassport = 34,
-  DocumentSouthAfricaRetiredPersonVisa = 35,
-  DocumentSouthAfricaStudyPermit = 36,
-  DocumentSouthAfricaVisitorVisa = 37,
-  DocumentTanzaniaPassport = 38,
-  DocumentUgandaIDCard = 39,
-  DocumentUgandaPassport = 40,
-  DocumentUnitedKingdomPassport = 41,
-  DocumentZambiaPassport = 42,
-  DocumentZimbabwePassport = 43,
+  DocumentGenericDocument = 6,
+  DocumentGenericIDCard = 7,
+  DocumentGenericPassport = 8,
+  DocumentGhanaPassport = 9,
+  DocumentKenyaIDCard = 10,
+  DocumentKenyaPassport = 11,
+  DocumentLesothoPassport = 12,
+  DocumentMalawiPassport = 13,
+  DocumentMauritiusPassport = 14,
+  DocumentMozambiqueIDCard = 15,
+  DocumentMozambiquePassport = 16,
+  DocumentNamibiaPassport = 17,
+  DocumentNigeriaPassport = 18,
+  DocumentPakistanPassport = 19,
+  DocumentPhilippinesDriversLicense = 20,
+  DocumentPhilippinesFirearmsLicense = 21,
+  DocumentPhilippinesIntegratedBarID = 22,
+  DocumentPhilippinesPassport = 23,
+  DocumentPhilippinesPhilHealthInsuranceCard = 24,
+  DocumentPhilippinesPostalID = 25,
+  DocumentPhilippinesProfessionalRegulationCommissionCard = 26,
+  DocumentPhilippinesSeafarerIdentificationDocument = 27,
+  DocumentPhilippinesSeafarerIdentificationRecordBook = 28,
+  DocumentPhilippinesSocialSecurityID = 29,
+  DocumentPhilippinesUnifiedMultipurposeID = 30,
+  DocumentSomaliaPassport = 31,
+  DocumentSouthAfricaDriversLicense = 32,
+  DocumentSouthAfricaGeneralWorkVisa = 33,
+  DocumentSouthAfricaGreenBook = 34,
+  DocumentSouthAfricaIDCard = 35,
+  DocumentSouthAfricaPassport = 36,
+  DocumentSouthAfricaRetiredPersonVisa = 37,
+  DocumentSouthAfricaStudyPermit = 38,
+  DocumentSouthAfricaVisitorVisa = 39,
+  DocumentTanzaniaPassport = 40,
+  DocumentUgandaIDCard = 41,
+  DocumentUgandaPassport = 42,
+  DocumentUnitedKingdomPassport = 43,
+  DocumentZambiaPassport = 44,
+  DocumentZimbabwePassport = 45,
 };
 
 
 typedef SWIFT_ENUM(NSInteger, DocumentType, open) {
-  DocumentTypeDriversLicense = 0,
-  DocumentTypeGreenBook = 1,
-  DocumentTypeIDCard = 2,
-  DocumentTypePassport = 3,
-  DocumentTypeVisa = 4,
-  DocumentTypeFirearmsLicense = 5,
-  DocumentTypeIntegratedBarID = 6,
-  DocumentTypePhilHealthInsuranceCard = 7,
-  DocumentTypePostalID = 8,
-  DocumentTypeProfessionalRegulationCommissionCard = 9,
-  DocumentTypeSeafarerIdentificationDocument = 10,
-  DocumentTypeSeafarerIdentificationRecordBook = 11,
-  DocumentTypeSocialSecurityID = 12,
-  DocumentTypeUnifiedMultipurposeID = 13,
+  DocumentTypeDocument = 0,
+  DocumentTypeDriversLicense = 1,
+  DocumentTypeGreenBook = 2,
+  DocumentTypeIDCard = 3,
+  DocumentTypePassport = 4,
+  DocumentTypeVisa = 5,
+  DocumentTypeFirearmsLicense = 6,
+  DocumentTypeIntegratedBarID = 7,
+  DocumentTypePhilHealthInsuranceCard = 8,
+  DocumentTypePostalID = 9,
+  DocumentTypeProfessionalRegulationCommissionCard = 10,
+  DocumentTypeSeafarerIdentificationDocument = 11,
+  DocumentTypeSeafarerIdentificationRecordBook = 12,
+  DocumentTypeSocialSecurityID = 13,
+  DocumentTypeUnifiedMultipurposeID = 14,
 };
 
 
@@ -432,6 +435,24 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity21EthiopiaPassportModel")
 @property (nonatomic, readonly, copy) NSString * _Nullable optionalData;
 @property (nonatomic, readonly) NSInteger optionalDataCheckDigit;
 @property (nonatomic, readonly) NSInteger compositeCheckDigit;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity20GenericDocumentModel")
+@interface GenericDocumentModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable result;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity18GenericIDCardModel")
+@interface GenericIDCardModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable frontResult;
+@property (nonatomic, readonly, copy) NSString * _Nullable backResult;
+@property (nonatomic, readonly, strong) UIImage * _Nullable documentBackImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentBackImagePath;
+- (void)saveImages;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
