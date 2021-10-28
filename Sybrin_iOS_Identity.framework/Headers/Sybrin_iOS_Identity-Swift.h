@@ -372,13 +372,14 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentSouthAfricaPassport = 36,
   DocumentSouthAfricaRetiredPersonVisa = 37,
   DocumentSouthAfricaStudyPermit = 38,
-  DocumentSouthAfricaVisitorVisa = 39,
-  DocumentTanzaniaPassport = 40,
-  DocumentUgandaIDCard = 41,
-  DocumentUgandaPassport = 42,
-  DocumentUnitedKingdomPassport = 43,
-  DocumentZambiaPassport = 44,
-  DocumentZimbabwePassport = 45,
+  DocumentSouthAfricaStudyVisa = 39,
+  DocumentSouthAfricaVisitorVisa = 40,
+  DocumentTanzaniaPassport = 41,
+  DocumentUgandaIDCard = 42,
+  DocumentUgandaPassport = 43,
+  DocumentUnitedKingdomPassport = 44,
+  DocumentZambiaPassport = 45,
+  DocumentZimbabwePassport = 46,
 };
 
 
@@ -970,6 +971,21 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SouthAfricaStudyPermitModel")
 @property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
 @property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
 @property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
+@property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
+@property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity25SouthAfricaStudyVisaModel")
+@interface SouthAfricaStudyVisaModel : DocumentModel
+@property (nonatomic, readonly, copy) NSString * _Nullable names;
+@property (nonatomic, readonly, copy) NSString * _Nullable passportNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable numberOfEntries;
+@property (nonatomic, readonly, copy) NSDate * _Nullable validFrom;
+@property (nonatomic, readonly, copy) NSString * _Nullable referenceNumber;
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateOfExpiry;
 @property (nonatomic, readonly, copy) NSString * _Nullable issuedAt;
 @property (nonatomic, readonly, copy) NSString * _Nullable controlNumber;

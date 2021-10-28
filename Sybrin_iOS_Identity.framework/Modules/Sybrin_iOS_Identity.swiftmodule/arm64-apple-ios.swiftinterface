@@ -534,6 +534,38 @@ public struct Environment : Swift.Codable {
     get
   }
 }
+@_inheritsConvenienceInitializers @objc final public class SouthAfricaStudyVisaModel : Sybrin_iOS_Identity.DocumentModel {
+  @objc final public var names: Swift.String? {
+    @objc get
+  }
+  @objc final public var passportNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var numberOfEntries: Swift.String? {
+    @objc get
+  }
+  @objc final public var validFrom: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var referenceNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var issuedAt: Swift.String? {
+    @objc get
+  }
+  @objc final public var controlNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var barcodeData: Swift.String? {
+    @objc get
+  }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum Sex : Swift.Int, Swift.Encodable {
   case Male
   case Female
@@ -1219,6 +1251,7 @@ public struct Environment : Swift.Codable {
   case SouthAfricaPassport
   case SouthAfricaRetiredPersonVisa
   case SouthAfricaStudyPermit
+  case SouthAfricaStudyVisa
   case SouthAfricaVisitorVisa
   case TanzaniaPassport
   case UgandaIDCard
