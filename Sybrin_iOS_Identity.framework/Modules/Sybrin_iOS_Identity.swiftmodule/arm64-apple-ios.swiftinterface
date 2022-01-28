@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Sybrin_iOS_Identity
 import AVFoundation
 import CommonCrypto
@@ -10,6 +10,7 @@ import Swift
 import Sybrin_iOS_Common
 @_exported import Sybrin_iOS_Identity
 import UIKit
+import _Concurrency
 @_inheritsConvenienceInitializers @objc final public class PhilippinesFirearmsLicenseModel : Sybrin_iOS_Identity.DocumentModel {
   @objc final public var fullName: Swift.String? {
     @objc get
@@ -1116,7 +1117,6 @@ public struct Environment : Swift.Codable {
   @objc final public var enableHelpMessages: Swift.Bool
   @objc final public var correlationID: Swift.String?
   @objc public init(license: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class SomaliaPassportModel : Sybrin_iOS_Identity.PassportModel {
