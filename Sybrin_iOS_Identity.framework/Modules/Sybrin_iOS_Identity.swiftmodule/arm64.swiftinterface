@@ -352,7 +352,7 @@ import _Concurrency
   @objc deinit
 }
 public struct Environment : Swift.Codable {
-  public var identityCorrelationIDURL: Swift.String?
+  public var AuditingURL: Swift.String?
   public init()
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
