@@ -1116,6 +1116,7 @@ public struct Environment : Swift.Codable {
   @objc final public var enableMultiPhaseVerification: Swift.Bool
   @objc final public var enableHelpMessages: Swift.Bool
   @objc final public var correlationID: Swift.String?
+  @objc final public var customAuthorizationToken: Swift.String?
   @objc public init(license: Swift.String)
   @objc deinit
 }

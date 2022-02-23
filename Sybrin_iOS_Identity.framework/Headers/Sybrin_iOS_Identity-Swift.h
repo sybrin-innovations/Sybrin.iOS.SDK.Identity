@@ -1055,6 +1055,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) BOOL enableMultiPhaseVerification;
 @property (nonatomic) BOOL enableHelpMessages;
 @property (nonatomic, copy) NSString * _Nullable correlationID;
+@property (nonatomic, copy) NSString * _Nullable customAuthorizationToken;
 - (nonnull instancetype)initWithLicense:(NSString * _Nonnull)license OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
