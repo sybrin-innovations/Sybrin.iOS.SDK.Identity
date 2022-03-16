@@ -22,7 +22,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		aHOT0Hsg95uz+DUauYHxhFeH1i0=
+		cX6Q8CYTKsU3lUan7tQfcHh252E=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -60,6 +60,42 @@
 		<data>
 		RxtbTN3LjpFChp3tmniX3KD+dsE=
 		</data>
+		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
+		<data>
+		aivDPGJTJHnhXMjipAry2Y7sMV0=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
+		<data>
+		V2ROSYH9TDZ87SKQfYmC78jkabg=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
+		<data>
+		W+TF/C0djllwb4ejtlbbwoqIOaA=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
+		<data>
+		6ny23cax5EGQNgpJKSnhJUhpxtQ=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_langid.tflite</key>
+		<data>
+		7HSIAQWybgEckhODNRSbO0NA3oQ=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
+		<data>
+		66UmXr+gf7XJ71vLnqjAwes9Mnw=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
+		<data>
+		68PK2+uslXMmEpqkRadeVy2t0PE=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
+		<data>
+		BQIj06B3MVer0TIFCE1lwPQqAQ8=
+		</data>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
+		<data>
+		oYS7+p9yJEEy3UOE1YgjDNNbLAM=
+		</data>
 		<key>Headers/Sybrin_iOS_Identity-Swift.h</key>
 		<data>
 		N6jjsd+HffeuztmO+Vm9qAf9dtE=
@@ -70,51 +106,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9LtKYVRAkr7xAyKDlxJH8460n9Q=
-		</data>
-		<key>LatinOCRResources.bundle/Info.plist</key>
-		<data>
-		Pt/9+A9rA89Qss7FiZrsxWbaliM=
-		</data>
-		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
-		<data>
-		V2ROSYH9TDZ87SKQfYmC78jkabg=
-		</data>
-		<key>LatinOCRResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
-		<data>
-		W+TF/C0djllwb4ejtlbbwoqIOaA=
-		</data>
-		<key>LatinOCRResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
-		<data>
-		6ny23cax5EGQNgpJKSnhJUhpxtQ=
-		</data>
-		<key>LatinOCRResources.bundle/tflite_langid.tflite</key>
-		<data>
-		/LcQXDvm1hHXPLE3IVulrhpZePE=
-		</data>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
-		<data>
-		66UmXr+gf7XJ71vLnqjAwes9Mnw=
-		</data>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
-		<data>
-		68PK2+uslXMmEpqkRadeVy2t0PE=
-		</data>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
-		<data>
-		BQIj06B3MVer0TIFCE1lwPQqAQ8=
-		</data>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
-		<data>
-		oYS7+p9yJEEy3UOE1YgjDNNbLAM=
+		nv+WpjoX657+XPhduGZBwgal9ZU=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		TvQP8JVSdImp6eqiW/RaUtZb/sc=
+		vLzTsouY3nt+YxWIcNoLGrha0vI=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		TvQP8JVSdImp6eqiW/RaUtZb/sc=
+		vLzTsouY3nt+YxWIcNoLGrha0vI=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KSWwwrSrllgto9otDhHk7Hv+HRw=
+		/jnFb0AVef8gDX620eOs2a6tHWY=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		KSWwwrSrllgto9otDhHk7Hv+HRw=
+		/jnFb0AVef8gDX620eOs2a6tHWY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -191,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjVamHZbCVbvs2tbgBjFTBBdM7Yt5vLKaHRKd6GHkGM=
+			02GmxZa5jMmPAjJO2K/fSZp/fxYKIcEPwpvgQVQTtY8=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -257,6 +257,69 @@
 			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
 			</data>
 		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pJU76QRgMRj4GpkJe/+1Ut2Pu9aZqY1BM1lEYlpeUgM=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gji2RtEJwU3YrjDV8SqQNvYPnpI8kwEzeqJQd1nysJg=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPDNQpLTZ7J3ggU9/BhgwGKbEwmAWLOsHW7KYoi7+wQ=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KQajsAlTNRgTxJFzQeGXEH7SqqwtF2UIkHWNwZAnHe4=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_langid.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g9SKOS50SMnJHvaBluGbAxQB/e5FMKcbR06Hr6dF/n0=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oFDru3MHCMhVaoh3k7h/zhLun/pRevxSBccdRiS9e8c=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VRUPJ3nQeTbJ+/i+y7hWf+PqWta22UQkWClpWorpaPo=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZKunGbTtHuWz1IhsWq8LGsBRv1h56bCOhh4OKeIKCKc=
+			</data>
+		</dict>
+		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
+			</data>
+		</dict>
 		<key>Headers/Sybrin_iOS_Identity-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -271,81 +334,18 @@
 			ahvvwvCQhnOuGZteS4hhC7U8onUk8DRx6jS06mDEvec=
 			</data>
 		</dict>
-		<key>LatinOCRResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gs+VfrnMYlCAmIOebluQBwH1HOb6R2yi+e24wf/gyHo=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Gji2RtEJwU3YrjDV8SqQNvYPnpI8kwEzeqJQd1nysJg=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EPDNQpLTZ7J3ggU9/BhgwGKbEwmAWLOsHW7KYoi7+wQ=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KQajsAlTNRgTxJFzQeGXEH7SqqwtF2UIkHWNwZAnHe4=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/tflite_langid.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			f5Mfb3wd0OxZGs53gN+RZFpFD6/INQXz/0XOXvfIRBs=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oFDru3MHCMhVaoh3k7h/zhLun/pRevxSBccdRiS9e8c=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VRUPJ3nQeTbJ+/i+y7hWf+PqWta22UQkWClpWorpaPo=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZKunGbTtHuWz1IhsWq8LGsBRv1h56bCOhh4OKeIKCKc=
-			</data>
-		</dict>
-		<key>LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
-			</data>
-		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y5yc5A2RXxOtWmyqTrVwlmvN+MK+4iR7OdpLXVO9+X8=
+			BOInVgiweC9SVnG0+bbtAzYlJombQCIswakejDAEwHo=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y5yc5A2RXxOtWmyqTrVwlmvN+MK+4iR7OdpLXVO9+X8=
+			BOInVgiweC9SVnG0+bbtAzYlJombQCIswakejDAEwHo=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -366,7 +366,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OPqcq6jVSN4VL35bBbKMinZbnDEulIa2hXVC8DjKWjg=
+			lMT6FJr5M5nQmUJ8qmDG3RwwpSZDE1vFc7sISETTpjI=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64.swiftdoc</key>
@@ -387,7 +387,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OPqcq6jVSN4VL35bBbKMinZbnDEulIa2hXVC8DjKWjg=
+			lMT6FJr5M5nQmUJ8qmDG3RwwpSZDE1vFc7sISETTpjI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
