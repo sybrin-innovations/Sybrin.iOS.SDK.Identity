@@ -1244,6 +1244,7 @@ public struct Environment : Swift.Codable {
   case PhilippinesSeafarerIdentificationRecordBook
   case PhilippinesSocialSecurityID
   case PhilippinesUnifiedMultipurposeID
+  case PhilippinesIdentificationCard
   case SomaliaPassport
   case SouthAfricaDriversLicense
   case SouthAfricaGeneralWorkVisa
@@ -1319,6 +1320,48 @@ public struct Environment : Swift.Codable {
   @objc final public var names: Swift.String? {
     @objc get
   }
+  final override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PhilippinesIdentificationCardModel : Sybrin_iOS_Identity.IDCardModel {
+  @objc final override public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc final public var address: Swift.String? {
+    @objc get
+  }
+  @objc final public var bloodType: Swift.String? {
+    @objc get
+  }
+  @objc final public var commonReferenceNumber: Swift.String? {
+    @objc get
+  }
+  @objc final public var dateOfIssued: Foundation.Date? {
+    @objc get
+  }
+  @objc final public var givenNames: Swift.String? {
+    @objc get
+  }
+  @objc final public var lastName: Swift.String? {
+    @objc get
+  }
+  @objc final public var maritalStatus: Swift.String? {
+    @objc get
+  }
+  @objc final public var middleName: Swift.String? {
+    @objc get
+  }
+  @objc final public var placeOfBirth: Swift.String? {
+    @objc get
+  }
+  @objc final public var idSex: Sybrin_iOS_Identity.Sex {
+    @objc get
+  }
+  @objc final public var idDateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  @objc final override public func saveImages()
   final override public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit

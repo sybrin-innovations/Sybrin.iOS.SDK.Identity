@@ -364,22 +364,23 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentPhilippinesSeafarerIdentificationRecordBook = 28,
   DocumentPhilippinesSocialSecurityID = 29,
   DocumentPhilippinesUnifiedMultipurposeID = 30,
-  DocumentSomaliaPassport = 31,
-  DocumentSouthAfricaDriversLicense = 32,
-  DocumentSouthAfricaGeneralWorkVisa = 33,
-  DocumentSouthAfricaGreenBook = 34,
-  DocumentSouthAfricaIDCard = 35,
-  DocumentSouthAfricaPassport = 36,
-  DocumentSouthAfricaRetiredPersonVisa = 37,
-  DocumentSouthAfricaStudyPermit = 38,
-  DocumentSouthAfricaStudyVisa = 39,
-  DocumentSouthAfricaVisitorVisa = 40,
-  DocumentTanzaniaPassport = 41,
-  DocumentUgandaIDCard = 42,
-  DocumentUgandaPassport = 43,
-  DocumentUnitedKingdomPassport = 44,
-  DocumentZambiaPassport = 45,
-  DocumentZimbabwePassport = 46,
+  DocumentPhilippinesIdentificationCard = 31,
+  DocumentSomaliaPassport = 32,
+  DocumentSouthAfricaDriversLicense = 33,
+  DocumentSouthAfricaGeneralWorkVisa = 34,
+  DocumentSouthAfricaGreenBook = 35,
+  DocumentSouthAfricaIDCard = 36,
+  DocumentSouthAfricaPassport = 37,
+  DocumentSouthAfricaRetiredPersonVisa = 38,
+  DocumentSouthAfricaStudyPermit = 39,
+  DocumentSouthAfricaStudyVisa = 40,
+  DocumentSouthAfricaVisitorVisa = 41,
+  DocumentTanzaniaPassport = 42,
+  DocumentUgandaIDCard = 43,
+  DocumentUgandaPassport = 44,
+  DocumentUnitedKingdomPassport = 45,
+  DocumentZambiaPassport = 46,
+  DocumentZimbabwePassport = 47,
 };
 
 
@@ -696,6 +697,25 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity31PhilippinesFirearmsLicenseModel")
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateExpiry;
 @property (nonatomic, readonly, copy) NSString * _Nullable otherLicenses;
 @property (nonatomic, readonly, copy) NSString * _Nullable address;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity34PhilippinesIdentificationCardModel")
+@interface PhilippinesIdentificationCardModel : IDCardModel
+@property (nonatomic, readonly, copy) NSString * _Nullable fullName;
+@property (nonatomic, readonly, copy) NSString * _Nullable address;
+@property (nonatomic, readonly, copy) NSString * _Nullable bloodType;
+@property (nonatomic, readonly, copy) NSString * _Nullable commonReferenceNumber;
+@property (nonatomic, readonly, copy) NSDate * _Nullable dateOfIssued;
+@property (nonatomic, readonly, copy) NSString * _Nullable givenNames;
+@property (nonatomic, readonly, copy) NSString * _Nullable lastName;
+@property (nonatomic, readonly, copy) NSString * _Nullable maritalStatus;
+@property (nonatomic, readonly, copy) NSString * _Nullable middleName;
+@property (nonatomic, readonly, copy) NSString * _Nullable placeOfBirth;
+@property (nonatomic, readonly) enum Sex idSex;
+@property (nonatomic, readonly, copy) NSDate * _Nullable idDateOfBirth;
+- (void)saveImages;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
