@@ -457,23 +457,22 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentPhilippinesSocialSecurityID = 29,
   DocumentPhilippinesUnifiedMultipurposeID = 30,
   DocumentPhilippinesIdentificationCard = 31,
-  DocumentPhilippinesQCIdentificationCard = 32,
-  DocumentSomaliaPassport = 33,
-  DocumentSouthAfricaDriversLicense = 34,
-  DocumentSouthAfricaGeneralWorkVisa = 35,
-  DocumentSouthAfricaGreenBook = 36,
-  DocumentSouthAfricaIDCard = 37,
-  DocumentSouthAfricaPassport = 38,
-  DocumentSouthAfricaRetiredPersonVisa = 39,
-  DocumentSouthAfricaStudyPermit = 40,
-  DocumentSouthAfricaStudyVisa = 41,
-  DocumentSouthAfricaVisitorVisa = 42,
-  DocumentTanzaniaPassport = 43,
-  DocumentUgandaIDCard = 44,
-  DocumentUgandaPassport = 45,
-  DocumentUnitedKingdomPassport = 46,
-  DocumentZambiaPassport = 47,
-  DocumentZimbabwePassport = 48,
+  DocumentSomaliaPassport = 32,
+  DocumentSouthAfricaDriversLicense = 33,
+  DocumentSouthAfricaGeneralWorkVisa = 34,
+  DocumentSouthAfricaGreenBook = 35,
+  DocumentSouthAfricaIDCard = 36,
+  DocumentSouthAfricaPassport = 37,
+  DocumentSouthAfricaRetiredPersonVisa = 38,
+  DocumentSouthAfricaStudyPermit = 39,
+  DocumentSouthAfricaStudyVisa = 40,
+  DocumentSouthAfricaVisitorVisa = 41,
+  DocumentTanzaniaPassport = 42,
+  DocumentUgandaIDCard = 43,
+  DocumentUgandaPassport = 44,
+  DocumentUnitedKingdomPassport = 45,
+  DocumentZambiaPassport = 46,
+  DocumentZimbabwePassport = 47,
 };
 
 
@@ -493,7 +492,6 @@ typedef SWIFT_ENUM(NSInteger, DocumentType, open) {
   DocumentTypeSeafarerIdentificationRecordBook = 12,
   DocumentTypeSocialSecurityID = 13,
   DocumentTypeUnifiedMultipurposeID = 14,
-  DocumentTypeQCIdentificationCard = 15,
 };
 
 
@@ -871,21 +869,6 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity52PhilippinesProfessionalRegulationCommiss
 @property (nonatomic, readonly, copy) NSString * _Nullable profession;
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateOfBirth;
 @property (nonatomic, readonly, copy) NSDate * _Nullable dateIssued;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC19Sybrin_iOS_Identity36PhilippinesQCIdentificationCardModel")
-@interface PhilippinesQCIdentificationCardModel : IDCardModel
-@property (nonatomic, readonly, copy) NSString * _Nullable civilStatus;
-@property (nonatomic, readonly, copy) NSString * _Nullable bloodType;
-@property (nonatomic, readonly, copy) NSDate * _Nullable dateIssued;
-@property (nonatomic, readonly, copy) NSDate * _Nullable validUntil;
-@property (nonatomic, readonly, copy) NSString * _Nullable disabilityType;
-@property (nonatomic, readonly, copy) NSString * _Nullable citizenType;
-@property (nonatomic, readonly, copy) NSString * _Nullable address;
-@property (nonatomic, readonly, copy) NSString * _Nullable qcReferenceNumber;
-@property (nonatomic, readonly, copy) NSString * _Nullable barcodeData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

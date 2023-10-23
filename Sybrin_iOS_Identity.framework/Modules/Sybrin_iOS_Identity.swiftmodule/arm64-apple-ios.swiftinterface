@@ -114,38 +114,6 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class PhilippinesQCIdentificationCardModel : Sybrin_iOS_Identity.IDCardModel {
-  @objc final public var civilStatus: Swift.String? {
-    @objc get
-  }
-  @objc final public var bloodType: Swift.String? {
-    @objc get
-  }
-  @objc final public var dateIssued: Foundation.Date? {
-    @objc get
-  }
-  @objc final public var validUntil: Foundation.Date? {
-    @objc get
-  }
-  @objc final public var disabilityType: Swift.String? {
-    @objc get
-  }
-  @objc final public var citizenType: Swift.String? {
-    @objc get
-  }
-  @objc final public var address: Swift.String? {
-    @objc get
-  }
-  @objc final public var qcReferenceNumber: Swift.String? {
-    @objc get
-  }
-  @objc final public var barcodeData: Swift.String? {
-    @objc get
-  }
-  final override public func encode(to encoder: any Swift.Encoder) throws
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc final public class BotswanaPassportModel : Sybrin_iOS_Identity.PassportModel {
   @objc final public var mrzLine1: Swift.String? {
     @objc get
@@ -1212,7 +1180,6 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
   case SeafarerIdentificationRecordBook
   case SocialSecurityID
   case UnifiedMultipurposeID
-  case QCIdentificationCard
   public var stringValue: Swift.String {
     get
   }
@@ -1293,7 +1260,6 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
   case PhilippinesSocialSecurityID
   case PhilippinesUnifiedMultipurposeID
   case PhilippinesIdentificationCard
-  case PhilippinesQCIdentificationCard
   case SomaliaPassport
   case SouthAfricaDriversLicense
   case SouthAfricaGeneralWorkVisa
@@ -1616,10 +1582,6 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
   }
   final override public func encode(to encoder: any Swift.Encoder) throws
   @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class Constants {
-  public static var isManualCapture: Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class EgyptPassportModel : Sybrin_iOS_Identity.PassportModel {
