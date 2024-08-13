@@ -5,6 +5,9 @@
 import AVFoundation
 import CommonCrypto
 import CoreGraphics
+import CoreImage
+import CoreML
+import CoreMotion
 import DeveloperToolsSupport
 import Foundation
 import MLKit
@@ -13,6 +16,7 @@ import SwiftUI
 import Sybrin_iOS_Common
 @_exported import Sybrin_iOS_Identity
 import UIKit
+import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -44,6 +48,36 @@ import _SwiftConcurrencyShims
   final override public func encode(to encoder: any Swift.Encoder) throws
   @objc override dynamic public init()
   @objc deinit
+}
+public protocol ImageScannerControllerDelegate : ObjectiveC.NSObjectProtocol {
+  func imageScannerController(_ scanner: Sybrin_iOS_Identity.ImageScannerController, didFinishScanningWithResults results: Sybrin_iOS_Identity.ImageScannerResults)
+  func imageScannerController(_ scanner: Sybrin_iOS_Identity.ImageScannerController, didFinishScanningWithPage1Results page1Results: Sybrin_iOS_Identity.ImageScannerResults, andPage2Results page2Results: Sybrin_iOS_Identity.ImageScannerResults)
+  func imageScannerControllerDidCancel(_ scanner: Sybrin_iOS_Identity.ImageScannerController)
+  func imageScannerController(_ scanner: Sybrin_iOS_Identity.ImageScannerController, didFailWithError error: any Swift.Error)
+}
+@objc @_Concurrency.MainActor(unsafe) final public class ImageScannerController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) weak final public var imageScannerDelegate: (any Sybrin_iOS_Identity.ImageScannerControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) final public var shouldScanTwoFaces: Swift.Bool
+  @_Concurrency.MainActor(unsafe) required public init(image: UIKit.UIImage? = nil, delegate: (any Sybrin_iOS_Identity.ImageScannerControllerDelegate)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @objc deinit
+}
+public struct ImageScannerResults {
+  public var originalImage: UIKit.UIImage
+  public var scannedImage: UIKit.UIImage
+  public var enhancedImage: UIKit.UIImage?
+  public var doesUserPreferEnhancedImage: Swift.Bool
+  public var detectedRectangle: Sybrin_iOS_Identity.Rectangle
 }
 @_inheritsConvenienceInitializers @objc final public class PhilippinesQCIdentificationCardModel : Sybrin_iOS_Identity.IDCardModel {
   @objc final public var civilStatus: Swift.String? {
@@ -451,6 +485,18 @@ public struct Environment : Swift.Codable {
     get
   }
 }
+public struct Rectangle {
+  public var topLeft: CoreFoundation.CGPoint
+  public var topRight: CoreFoundation.CGPoint
+  public var bottomRight: CoreFoundation.CGPoint
+  public var bottomLeft: CoreFoundation.CGPoint
+  public var description: Swift.String {
+    get
+  }
+}
+extension Sybrin_iOS_Identity.Rectangle : Swift.Equatable {
+  public static func == (lhs: Sybrin_iOS_Identity.Rectangle, rhs: Sybrin_iOS_Identity.Rectangle) -> Swift.Bool
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class SybrinIdentity : ObjectiveC.NSObject {
   @objc public static let shared: Sybrin_iOS_Identity.SybrinIdentity
   @objc final public var configuration: Sybrin_iOS_Identity.SybrinIdentityConfiguration? {
@@ -695,6 +741,22 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum ImageScannerControllerError : Swift.Error {
+  case authorization
+  case inputDevice
+  case capture
+  case ciImageCreation
+  public static func == (a: Sybrin_iOS_Identity.ImageScannerControllerError, b: Sybrin_iOS_Identity.ImageScannerControllerError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Sybrin_iOS_Identity.ImageScannerControllerError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 @objc public enum Document : Swift.Int, Swift.CaseIterable {
   case GenericDocument
   case PhilippinesDriversLicense
@@ -731,6 +793,24 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class DataModel : ObjectiveC.NSObject, Swift.Encodable {
+  @objc public var originalDocumentImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var croppedDocumentImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc public var originalDocumentImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public var croppedDocumentImagePath: Swift.String? {
+    @objc get
+  }
+  @objc public func saveImages()
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
@@ -1044,6 +1124,8 @@ extension Sybrin_iOS_Identity.Language : Swift.Hashable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.Equatable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.Hashable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.RawRepresentable {}
+extension Sybrin_iOS_Identity.ImageScannerControllerError : Swift.Equatable {}
+extension Sybrin_iOS_Identity.ImageScannerControllerError : Swift.Hashable {}
 extension Sybrin_iOS_Identity.Document : Swift.Equatable {}
 extension Sybrin_iOS_Identity.Document : Swift.Hashable {}
 extension Sybrin_iOS_Identity.Document : Swift.RawRepresentable {}

@@ -303,6 +303,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+
 typedef SWIFT_ENUM(NSInteger, CitizenshipType, open) {
   CitizenshipTypeCitizen = 0,
   CitizenshipTypePermanentResident = 1,
@@ -347,6 +349,19 @@ typedef SWIFT_ENUM(NSInteger, CutOutType, open) {
   CutOutTypeNONE = 7,
 };
 
+@class UIImage;
+@class NSString;
+
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity9DataModel")
+@interface DataModel : NSObject
+@property (nonatomic, readonly, strong) UIImage * _Nullable originalDocumentImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable croppedDocumentImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable originalDocumentImagePath;
+@property (nonatomic, readonly, copy) NSString * _Nullable croppedDocumentImagePath;
+- (void)saveImages;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentGenericDocument = 0,
   DocumentPhilippinesDriversLicense = 1,
@@ -367,8 +382,6 @@ typedef SWIFT_ENUM(NSInteger, Document, open) {
   DocumentSouthAfricaPassport = 16,
 };
 
-@class UIImage;
-@class NSString;
 
 SWIFT_CLASS("_TtC19Sybrin_iOS_Identity13DocumentModel")
 @interface DocumentModel : NSObject
@@ -491,6 +504,34 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity11IDCardModel")
 @property (nonatomic, readonly, copy) NSString * _Nullable croppedDocumentBackImagePath;
 - (void)saveImages;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSBundle;
+@class NSCoder;
+@class UIViewController;
+
+/// A view controller that manages the full flow for scanning documents.
+/// The <code>ImageScannerController</code> class is meant to be presented. It consists of a series of 3 different screens which guide the user:
+/// <ol>
+///   <li>
+///     Uses the camera to capture an image with a rectangle that has been detected.
+///   </li>
+///   <li>
+///     Edit the detected rectangle.
+///   </li>
+///   <li>
+///     Review the cropped down version of the rectangle.
+///   </li>
+/// </ol>
+SWIFT_CLASS("_TtC19Sybrin_iOS_Identity22ImageScannerController")
+@interface ImageScannerController : UINavigationController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_UNAVAILABLE;
 @end
 
 
@@ -762,7 +803,6 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity24SouthAfricaPassportModel")
 @end
 
 @class SybrinIdentityConfiguration;
-@class UIViewController;
 
 SWIFT_CLASS("_TtC19Sybrin_iOS_Identity14SybrinIdentity")
 @interface SybrinIdentity : NSObject
@@ -793,7 +833,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) CGFloat overlayBorderLength;
 @property (nonatomic) enum UIBlurEffectStyle overlayBlurStyle;
 @property (nonatomic) CGFloat overlayBlurIntensity;
-@property (nonatomic) enum AVCaptureDevicePosition cameraPosition;
+@property (nonatomic) AVCaptureDevicePosition cameraPosition;
 @property (nonatomic, copy) NSString * _Nonnull environmentKey;
 @property (nonatomic, copy) NSString * _Nonnull overlayBrandingTitleText;
 @property (nonatomic, strong) UIColor * _Nonnull overlayBrandingTitleColor;
@@ -813,6 +853,12 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
+
+
+
 
 
 
