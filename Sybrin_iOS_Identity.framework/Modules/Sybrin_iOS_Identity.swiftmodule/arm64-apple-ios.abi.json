@@ -17356,6 +17356,101 @@
         "children": [
           {
             "kind": "Var",
+            "name": "environmentKey",
+            "printedName": "environmentKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvp",
+            "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvp",
+            "moduleName": "Sybrin_iOS_Identity",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvg",
+                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvg",
+                "moduleName": "Sybrin_iOS_Identity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvs",
+                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvs",
+                "moduleName": "Sybrin_iOS_Identity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvM",
+                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvM",
+                "moduleName": "Sybrin_iOS_Identity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "license",
             "printedName": "license",
             "children": [
@@ -18283,105 +18378,6 @@
                 "declKind": "Accessor",
                 "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14cameraPositionSo015AVCaptureDeviceF0VvM",
                 "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14cameraPositionSo015AVCaptureDeviceF0VvM",
-                "moduleName": "Sybrin_iOS_Identity",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "environmentKey",
-            "printedName": "environmentKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Sybrin_iOS_Identity@objc(cs)SybrinIdentityConfiguration(py)environmentKey",
-            "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvp",
-            "moduleName": "Sybrin_iOS_Identity",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Sybrin_iOS_Identity@objc(cs)SybrinIdentityConfiguration(im)environmentKey",
-                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvg",
-                "moduleName": "Sybrin_iOS_Identity",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Sybrin_iOS_Identity@objc(cs)SybrinIdentityConfiguration(im)setEnvironmentKey:",
-                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvs",
-                "moduleName": "Sybrin_iOS_Identity",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvM",
-                "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC14environmentKeySSvM",
                 "moduleName": "Sybrin_iOS_Identity",
                 "implicit": true,
                 "declAttributes": [
@@ -19949,7 +19945,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(license:)",
+            "printedName": "init(license:environmentKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19962,13 +19958,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Sybrin_iOS_Identity@objc(cs)SybrinIdentityConfiguration(im)initWithLicense:",
-            "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC7licenseACSS_tcfc",
+            "usr": "c:@M@Sybrin_iOS_Identity@objc(cs)SybrinIdentityConfiguration(im)initWithLicense:environmentKey:",
+            "mangledName": "$s19Sybrin_iOS_Identity0aC13ConfigurationC7license14environmentKeyACSS_SStcfc",
             "moduleName": "Sybrin_iOS_Identity",
-            "objc_name": "initWithLicense:",
+            "objc_name": "initWithLicense:environmentKey:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -35745,1025 +35747,752 @@
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 1431,
-      "length": 12,
-      "value": "\"networking\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 1515,
+      "offset": 1482,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2395,
+      "offset": 2362,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2985,
+      "offset": 2952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3049,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 3088,
-      "length": 13,
-      "value": "\"open crop 1\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 3733,
-      "length": 13,
-      "value": "\"open crop 2\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3821,
+      "offset": 3016,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3895,
+      "offset": 3680,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3974,
+      "offset": 3754,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3833,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 4065,
+      "offset": 3924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5524,
+      "offset": 5383,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5584,
+      "offset": 5443,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 5894,
+      "offset": 5753,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5989,
+      "offset": 5848,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7195,
+      "offset": 7054,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7491,
+      "offset": 7350,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 7625,
+      "offset": 7484,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 7917,
+      "offset": 7776,
       "length": 57,
       "value": "\"https:\/\/soma.sybrin.com\/api\/Authentication\/GetAuthToken\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 8329,
+      "offset": 8188,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 8446,
+      "offset": 8305,
       "length": 494,
       "value": "\"4TCwugAK2AW3mphu+F5RovGmOEj5oM63iQnUlHyVJtRDohz5qULCOc6GhnyP0gi9UKPC6M9ta\/QZIPHHdgGwiTCnBsTIN7lAL8+djeMsDFt23e3BfjRmDQ7n1nJPnwA25Pdwlcxyv4Q5BD0khUzCJVM2vkli1gy7FOvJJ\/IN72Qu\/W8DVXn3dvulMwRH5\/fZYYX8Fq+LGimXUmEc5QpH9dWYgO6489bxczmWyvzyEfOJZASuIkCpABcaoAakcEzDGnVo7GYaqnUAHM3pb2VFpGkObTO01mL8t71+MUX7Rm\/2DKYZMbnr2Ep1DWfs2qsrGYq1ffYWoof5N6AAvIoYAgmq78OemK0efUO3\/EIB0fzAWg2F36BMYaI4sLmTmp76BrmNKhsPWM3TZjXYj9xNJoFV6j0SVtYVNsa4R8BCWDm3N2wIn6EJ5uwTYsIJQFZtZjjQVNY\/hRulKHbD+ZbkB5xwOPuhrAbvrMFGyo4ZYNw=\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 8962,
+      "offset": 8821,
       "length": 8,
       "value": "\"APIKey\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 8997,
+      "offset": 8856,
       "length": 18,
       "value": "\"Application\/json\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9037,
+      "offset": 8896,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9111,
+      "offset": 8970,
       "length": 10,
       "value": "\"ObjectID\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9123,
+      "offset": 8982,
       "length": 32,
       "value": "\"SybrinIdentitySDKAuditingModel\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9169,
+      "offset": 9028,
       "length": 10,
       "value": "\"Platform\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9181,
+      "offset": 9040,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "Array",
-      "offset": 9615,
+      "offset": 9474,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9738,
+      "offset": 9597,
       "length": 11,
       "value": "\"AuthToken\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9797,
+      "offset": 9656,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9806,
+      "offset": 9665,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9930,
+      "offset": 9789,
       "length": 26,
       "value": "\"Request body parse error\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 9990,
+      "offset": 9849,
       "length": 38,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10027,
+      "offset": 9886,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10224,
+      "offset": 10083,
       "length": 6,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10342,
+      "offset": 10201,
       "length": 27,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10368,
+      "offset": 10227,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10396,
+      "offset": 10255,
       "length": 99,
       "value": "\"Content-Disposition: form-data; name=\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10448,
+      "offset": 10307,
       "length": 1,
       "value": "\"\"; filename=\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10480,
+      "offset": 10339,
       "length": 1,
       "value": "\"\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10494,
+      "offset": 10353,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10522,
+      "offset": 10381,
       "length": 57,
       "value": "\"Content-Type: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10578,
+      "offset": 10437,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10694,
+      "offset": 10553,
       "length": 29,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10708,
+      "offset": 10567,
       "length": 2,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10722,
+      "offset": 10581,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 10858,
+      "offset": 10717,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10950,
+      "offset": 10809,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 10965,
+      "offset": 10824,
       "length": 12,
       "value": "\"FrontImage\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11074,
+      "offset": 10933,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11089,
+      "offset": 10948,
       "length": 11,
       "value": "\"BackImage\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11208,
+      "offset": 11067,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11228,
+      "offset": 11087,
       "length": 26,
       "value": "\"https:\/\/soma.sybrin.com\/\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11255,
+      "offset": 11114,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11259,
+      "offset": 11118,
       "length": 33,
       "value": "\"api\/DocumentCapture\/ExtractData\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11386,
+      "offset": 11245,
       "length": 16,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11401,
+      "offset": 11260,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11424,
+      "offset": 11283,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11466,
+      "offset": 11325,
       "length": 8,
       "value": "\"IDCARD\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11496,
+      "offset": 11355,
       "length": 14,
       "value": "\"DocumentType\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11537,
+      "offset": 11396,
       "length": 5,
       "value": "\"ZAF\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11564,
+      "offset": 11423,
       "length": 13,
       "value": "\"CountryCode\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11604,
+      "offset": 11463,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11632,
+      "offset": 11491,
       "length": 7,
       "value": "\"UseV2\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11666,
+      "offset": 11525,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11694,
+      "offset": 11553,
       "length": 26,
       "value": "\"UseSegmentationBeforeOCR\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11759,
+      "offset": 11618,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11866,
+      "offset": 11725,
       "length": 43,
       "value": "\"multipart\/form-data; boundary=\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11908,
+      "offset": 11767,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 11931,
+      "offset": 11790,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "Array",
-      "offset": 16266,
+      "offset": 16125,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 16698,
+      "offset": 16557,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "FloatLiteral",
-      "offset": 17090,
+      "offset": 16949,
       "length": 3,
       "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 17364,
-      "length": 19,
-      "value": "\"MySavedImageFront\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 17403,
-      "length": 78,
-      "value": "\"Saved image at: \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 17440,
-      "length": 39,
-      "value": "\"did not sSaved image at: Unknown path\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 17480,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "FloatLiteral",
-      "offset": 17679,
+      "offset": 17326,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 17938,
-      "length": 18,
-      "value": "\"MySavedImageBack\""
+      "offset": 17834,
+      "length": 56,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 17972,
-      "length": 78,
-      "value": "\"Saved image at: \""
+      "offset": 17845,
+      "length": 3,
+      "value": "\"api\/v1\/imagequalityanalysis\/identitydocument\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18009,
-      "length": 39,
-      "value": "\"did not sSaved image at: Unknown path\""
+      "offset": 18110,
+      "length": 17,
+      "value": "\"orch_url \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18049,
+      "offset": 18126,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18147,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18160,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18263,
-      "length": 7,
-      "value": "\"image\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 18278,
-      "length": 12,
-      "value": "\"FrontImage\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 18386,
-      "length": 7,
-      "value": "\"image\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 18401,
-      "length": 11,
-      "value": "\"BackImage\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 18668,
-      "length": 70,
-      "value": "\"https:\/\/soma.sybrin.com\/api\/v1\/imagequalityanalysis\/identitydocument\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 18838,
+      "offset": 18211,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18870,
+      "offset": 18243,
       "length": 16,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18885,
+      "offset": 18258,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18908,
+      "offset": 18281,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18950,
+      "offset": 18323,
       "length": 43,
       "value": "\"multipart\/form-data; boundary=\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 18992,
+      "offset": 18365,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 19015,
+      "offset": 18388,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 19479,
-      "length": 13,
-      "value": "\"res \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 19491,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 19750,
+      "offset": 19030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 19828,
-      "length": 14,
-      "value": "\"res \""
+      "offset": 19127,
+      "length": 21,
+      "value": "\"IQA error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 19841,
+      "offset": 19147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 20014,
-      "length": 6,
-      "value": "\"\r\n\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20132,
-      "length": 27,
-      "value": "\"--\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20158,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20186,
-      "length": 93,
-      "value": "\"Content-Disposition: form-data; name=\"images\"; filename=\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20264,
-      "length": 1,
-      "value": "\"\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20278,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20306,
-      "length": 57,
-      "value": "\"Content-Type: \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20362,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20478,
-      "length": 29,
-      "value": "\"--\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20492,
-      "length": 2,
-      "value": "\"--\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 20506,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 21176,
+      "offset": 19855,
       "length": 23,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 21192,
+      "offset": 19871,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21194,
+      "offset": 19873,
       "length": 1,
       "value": "\".jpg\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21227,
+      "offset": 19906,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 21303,
+      "offset": 19982,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21332,
+      "offset": 20011,
       "length": 19,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21346,
+      "offset": 20025,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21397,
+      "offset": 20076,
       "length": 79,
       "value": "\"Content-Disposition: form-data; name=\"images\"; filename=\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21469,
+      "offset": 20148,
       "length": 1,
       "value": "\"\"\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21522,
+      "offset": 20201,
       "length": 35,
       "value": "\"Content-Type: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21548,
+      "offset": 20227,
       "length": 1,
       "value": "\"\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21638,
+      "offset": 20317,
       "length": 6,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21697,
+      "offset": 20376,
       "length": 21,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21711,
+      "offset": 20390,
       "length": 2,
       "value": "\"--\r\n\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21926,
+      "offset": 20605,
       "length": 21,
       "value": "\"Image Quality Issue\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 21996,
+      "offset": 20675,
       "length": 420,
       "value": "\"The image you captured does not meet our quality standards due to the following reason(s):\n* Blurry\n* Overexposed\n\nIs the image clearly readable, or would you like to retake the photo?\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 22572,
+      "offset": 21251,
       "length": 8,
       "value": "\"Retake\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 22660,
+      "offset": 21339,
       "length": 33,
       "value": "\"User chose to retake the photo.\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 22799,
+      "offset": 21478,
       "length": 9,
       "value": "\"Confirm\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "StringLiteral",
-      "offset": 22889,
+      "offset": 21568,
       "length": 35,
       "value": "\"User confirmed the image quality.\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 23191,
+      "offset": 21870,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 23411,
-      "length": 40,
-      "value": "\"Error: Could not convert image to data\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 23806,
-      "length": 10,
-      "value": "\"MyImages\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23930,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 23989,
-      "length": 59,
-      "value": "\"Error: Could not create folder \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24036,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24047,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24196,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24208,
-      "length": 1,
-      "value": "\".png\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24351,
-      "length": 46,
-      "value": "\"Image saved successfully at path: \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24396,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24462,
-      "length": 40,
-      "value": "\"Error: Could not save image - \""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/South Africa\/ID Card\/Scan Phases\/SouthAfricaIDCardNetworkPhase.swift",
-      "kind": "StringLiteral",
-      "offset": 24501,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinItemGroup.swift",
@@ -45587,687 +45316,911 @@
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4634,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 4598,
+      "offset": 4641,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4850,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 4857,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4966,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 4985,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5059,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 5066,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 5229,
       "length": 16,
       "value": "\"IdentityScanVC\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 5055,
+      "offset": 5686,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 5324,
+      "offset": 5955,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 5453,
+      "offset": 6084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 6166,
+      "offset": 6797,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 6370,
+      "offset": 7001,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 6560,
+      "offset": 7234,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7443,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 7450,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7559,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 7578,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7652,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 7659,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 7822,
       "length": 16,
       "value": "\"IdentityScanVC\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 6769,
+      "offset": 8031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 7187,
+      "offset": 8449,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 7441,
+      "offset": 8703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 7570,
+      "offset": 8832,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 8175,
+      "offset": 9437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 8379,
+      "offset": 9641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 8569,
+      "offset": 9831,
       "length": 16,
       "value": "\"IdentityScanVC\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 8785,
+      "offset": 10047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 9175,
+      "offset": 10437,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 9429,
+      "offset": 10691,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 9558,
+      "offset": 10820,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 10168,
+      "offset": 11430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 10372,
+      "offset": 11634,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11860,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 10562,
+      "offset": 11867,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12076,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 12083,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12192,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 12211,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12285,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 12292,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 12455,
       "length": 16,
       "value": "\"IdentityScanVC\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 10763,
+      "offset": 12656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 11157,
+      "offset": 13050,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 11403,
+      "offset": 13296,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 11532,
+      "offset": 13425,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 12149,
+      "offset": 14042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 12353,
+      "offset": 14246,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 12543,
+      "offset": 14479,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14688,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 14695,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14804,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 14823,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14897,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 14904,
+      "length": 24,
+      "value": "\"Invalid enviroment key\""
+    },
+    {
+      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 15067,
       "length": 16,
       "value": "\"IdentityScanVC\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 12746,
+      "offset": 15270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 13146,
+      "offset": 15670,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 13394,
+      "offset": 15918,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 13523,
+      "offset": 16047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 13728,
+      "offset": 16252,
       "length": 28,
       "value": "\"Decrypting Environment key\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 13798,
+      "offset": 16322,
       "length": 13,
       "value": "\"Environment\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 13971,
+      "offset": 16495,
       "length": 25,
       "value": "\"Invalid Environment key\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 14059,
+      "offset": 16583,
       "length": 27,
       "value": "\"Environment key decrypted\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 14567,
+      "offset": 17091,
       "length": 44,
       "value": "\"Failed to decode JSON to environment model\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 14645,
+      "offset": 17169,
       "length": 38,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 14682,
+      "offset": 17206,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 14970,
+      "offset": 17494,
       "length": 23,
       "value": "\"Configuration not set\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15133,
+      "offset": 17657,
       "length": 33,
       "value": "\"Scanning is already in progress\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15455,
+      "offset": 17979,
       "length": 20,
       "value": "\"Validating license\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15577,
+      "offset": 18101,
       "length": 27,
       "value": "\"License validation failed\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15629,
+      "offset": 18153,
       "length": 26,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15654,
+      "offset": 18178,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 15974,
+      "offset": 18498,
       "length": 34,
       "value": "\"Checking if country is supported\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 16097,
+      "offset": 18621,
       "length": 23,
       "value": "\"Country not supported\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 16263,
+      "offset": 18787,
       "length": 28,
       "value": "\"Checking for camera access\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 16353,
+      "offset": 18877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 16598,
+      "offset": 19122,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 16691,
+      "offset": 19215,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 16808,
+      "offset": 19332,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 16960,
+      "offset": 19484,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17036,
+      "offset": 19560,
       "length": 23,
       "value": "\"Initializing Identity\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17154,
+      "offset": 19678,
       "length": 23,
       "value": "\"Configuration not set\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17299,
+      "offset": 19823,
       "length": 25,
       "value": "\"Setting common settings\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17430,
+      "offset": 19954,
       "length": 22,
       "value": "\"Initializing license\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17572,
+      "offset": 20096,
       "length": 30,
       "value": "\"Failed to initialize license\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17631,
+      "offset": 20155,
       "length": 25,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17655,
+      "offset": 20179,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 17806,
+      "offset": 20330,
       "length": 30,
       "value": "\"Setting common configuration\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18074,
+      "offset": 20598,
       "length": 26,
       "value": "\"Loading framework bundle\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18170,
+      "offset": 20694,
       "length": 21,
       "value": "\"Sybrin_iOS_Identity\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18201,
+      "offset": 20725,
       "length": 11,
       "value": "\"framework\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18227,
+      "offset": 20751,
       "length": 12,
       "value": "\"Frameworks\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18372,
+      "offset": 20896,
       "length": 16,
       "value": "\"SybrinIdentity\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18446,
+      "offset": 20970,
       "length": 13,
       "value": "\"SybrinLogoH\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18521,
+      "offset": 21045,
       "length": 20,
       "value": "\"Setting storyboard\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18611,
+      "offset": 21135,
       "length": 26,
       "value": "\"Failed to set storyboard\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18773,
+      "offset": 21297,
       "length": 19,
       "value": "\"Checking SDK Type\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 18912,
+      "offset": 21436,
       "length": 30,
       "value": "\"Incorrect Framework SDK Type\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 19067,
+      "offset": 21591,
       "length": 22,
       "value": "\"Identity initialized\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 19139,
+      "offset": 21663,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "IntegerLiteral",
-      "offset": 20820,
+      "offset": 23344,
       "length": 9,
       "value": "1000000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 20942,
+      "offset": 23466,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 20957,
+      "offset": 23481,
       "length": 65,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 20989,
+      "offset": 23513,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21021,
+      "offset": 23545,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21039,
+      "offset": 23563,
       "length": 81,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21071,
+      "offset": 23595,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21103,
+      "offset": 23627,
       "length": 4,
       "value": "\" scan successful\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21144,
+      "offset": 23668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21334,
+      "offset": 23858,
       "length": 27,
       "value": "\"Audit posted successfully\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21454,
+      "offset": 23978,
       "length": 23,
       "value": "\"Failure posting Audit\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21642,
+      "offset": 24166,
       "length": 65,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21674,
+      "offset": 24198,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21706,
+      "offset": 24230,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21744,
+      "offset": 24268,
       "length": 23,
       "value": "\"Updating count failed\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21805,
+      "offset": 24329,
       "length": 25,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 21829,
+      "offset": 24353,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "IntegerLiteral",
-      "offset": 23815,
+      "offset": 26339,
       "length": 9,
       "value": "1000000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "BooleanLiteral",
-      "offset": 23937,
+      "offset": 26461,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 23953,
+      "offset": 26477,
       "length": 65,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 23985,
+      "offset": 26509,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 24017,
+      "offset": 26541,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 24035,
+      "offset": 26559,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 24259,
+      "offset": 26783,
       "length": 27,
       "value": "\"Audit posted successfully\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/SybrinIdentity.swift",
       "kind": "StringLiteral",
-      "offset": 24379,
+      "offset": 26903,
       "length": 23,
       "value": "\"Failure posting Audit\""
     },
@@ -51167,273 +51120,266 @@
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 465,
+      "offset": 508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 475,
+      "offset": 518,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 527,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 494,
+      "offset": 537,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 560,
+      "offset": 603,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 613,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 579,
+      "offset": 622,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 589,
+      "offset": 632,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 656,
+      "offset": 699,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 666,
+      "offset": 709,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 675,
+      "offset": 718,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 685,
+      "offset": 728,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 751,
+      "offset": 794,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 761,
+      "offset": 804,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 770,
+      "offset": 813,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 780,
+      "offset": 823,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 832,
+      "offset": 875,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 880,
+      "offset": 923,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 995,
+      "offset": 1038,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1113,
-      "length": 2138,
-      "value": "\"jeJMnE9i4lXNAy0F56ll0L3\/7CBQEnLkH76fs2dqN20\/3jN+vO4cJ0Z7sbk6+XL56ustFl0\/Qxvvkp4o1jOonLo+EW13uMuPsZOO1ZqAbR5d2F05OR+NjmoiwHZ0sWSx8drGscnpRYIGl6oxrN8P+EQ4XmLQ\/qpivLTTL8iAuaN982usrYUEAG5B0ru0xyzA7jUVlwY9+eztF6Od8hwOsRUpoPSwYogTlG9Wwgh6CBihKh1dDN6ndkkirp9+1ROGtfNYcWqL3XGiZFy5C7IXIGvPEAyvxj8HQBApXNRqygiWWZk+shLQj+peDSt2cC1IYa9D39D5lTXqTFb52umrZASDKWaN7ZV9Gf6kj\/FYzdKvjevWlVND01amPAnutd1rnPH7eY5xc1efIIiRm53z4M5s7\/\/bKTQkIHtXy9EdvO\/eKBczgYGDd2HUzi3SMcJClXqevYsApRPjGGB53Ca7s1Ne2wji3rb1zHrYC8CqVUCIVGi3XMkEV\/nwztF9RIQNaeaNTc3i5iUwNkK3G5nolagNtPt8Av0UwC7J1io8fR4jGunglHP64zR3iNQjSxXihzoTKFsqAC2dWGszazVBK8FSryZ205Q9ta+1UmWzRtVM\/Lk9yCAYfL0MDmZ2TSqJ5S4n45WE0lQCa6quQA2HbdM\/NzxkVwQMtRFsbwZUbAyEApW4LuIx2BFZgrwagjaoalx1pdm9aKKhB0uRTB45tXaWN83gTWEH8Ipt+A9EZxCxXg6Q77WeQ8FDhuqeLkfWGdFsy+MKgIla3jk5mleDruHf+SSrYXxxATBrZ3p0Ek8jSrHqF5ekausFmbhLF0TnA1rueZ6iLLK5lDWGDOhSJY\/m\/N86DSH+P38TpPPzzMUU6MdfZSZz5Kek7niGTIhN1es\/pqF6wCGlP5MuIYe\/ZjfuRTLyBuHIxUwH+d3pxJXDjAtImNAEB3RQov8nLbinvoRLHw8FvDBsQfGz4NmdPorpk4NLiwcOq1N1Fk4V39pYtZmyQfdkaFmd\/LnzB+b5zw7\/skZ9GYB7eUZnqoiEbaHN41eT2\/4jKXL7Dk2RASy\/w5MKrkPRVhrhKliHenHepRsYApbymkO0xKPa0NsL9XG2JYfn5X\/4\/mho+9lLXnMBenaplxCrOl9nUv+NzhNQKUsXOkhcm94kStGs5POeFokjfpvmWjGLx6baXdP3FQ8h1RE1l7QBx3rofOfHMUqHflAbPoCISd7gDfyQ1wDuAz42oGkhGaPTK4CLO91hTiPhvcTS3BwgQBDehXaARd0ONDV1uskt8JpCmSqGky5x6W56cV6NFEBV4loj3WRPAE54QYPFq6QbjctMCk+JHR8Av72R1g7KZrXE6ShyP8wHCYpmQ9jo6WHsLdv7najgK+kBL3vuOE5ziyql6XSjdi8Ij2TpZ66jQMab2p7WnXPDZFNuWpahKWPRApklxzy\/ksfi9VPYTWlNeWnyYvCxHo63RZhjx1OKWPLzAtT\/1Txlj0jujEddl8V412jAdPMOT2PrIkZp5Vj5ELpCR1t2SC9Q9Sml1K3fNjDnClKyrCf9azsNdcConsiYi3uxiA2PHn89OzhbcU7XGdxXPxeb53oo\/jkokY5wDZDc9eWmekL4xkjEGybF5NU5gDVpofDKNCZwvDWbk3eeyeGbrmx60n7PGNZeMsnqrlu4\/vYwNH\/DIaeB5vlZ59lLlloO2MBJd3Y87jkbkBOELlImCtbLEYQRt8dyA+4gZWrUMtEFk6x1DMsGnUhD69D7p6i0rU0JKSeGZGsJXdmUpznzvOe5JMHjTgWWfBWJeRE1ExtYnOInz6mobkNn1delk1GRzJn2viqBEx7xAcpBezq36JXIQPL0CTgu4q\/VoN4pf1K1+S5gAsdBc3Gh\/cncPagi58pZGTg6IRPL6R57kA55+lA0vEZfLykZ8zixdIG9DmPbRmLcrULfl+hRDv9iRD3uVumD\/45169dS\/qij9e5nuBV1rH9ZdRtqWJm25LxByXjQFN8iaNpjJmDnc\/oAz7uV\/BZc7zQHoEeiWDScHR7uqCtuckbtO7iijl9yldEV2fDiI5UTcgNvdIJx+9kQI0UKtJLCjmVDIhubbOE4SRXasrblNq6Zn8mbc2jGsXLlWUjTpeuTaA==\""
-    },
-    {
-      "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 4721,
+      "offset": 2624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4789,
+      "offset": 2692,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4799,
+      "offset": 2702,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4808,
+      "offset": 2711,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4818,
+      "offset": 2721,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4879,
+      "offset": 2782,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4950,
+      "offset": 2853,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4960,
+      "offset": 2863,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4969,
+      "offset": 2872,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4979,
+      "offset": 2882,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5027,
+      "offset": 2930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5079,
+      "offset": 2982,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5123,
+      "offset": 3026,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5177,
+      "offset": 3080,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5216,
+      "offset": 3119,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5272,
+      "offset": 3175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5331,
+      "offset": 3234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5379,
+      "offset": 3282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 5477,
+      "offset": 3380,
       "length": 4,
       "value": "true"
     },
@@ -51447,35 +51393,35 @@
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8620,
+      "offset": 6622,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8778,
+      "offset": 6780,
       "length": 10,
       "value": "\"FILIPINO\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8839,
+      "offset": 6841,
       "length": 9,
       "value": "\"ENGLISH\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8948,
+      "offset": 6950,
       "length": 10,
       "value": "\"FILIPINO\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Models\/SybrinIdentityConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9010,
+      "offset": 7012,
       "length": 9,
       "value": "\"ENGLISH\""
     },

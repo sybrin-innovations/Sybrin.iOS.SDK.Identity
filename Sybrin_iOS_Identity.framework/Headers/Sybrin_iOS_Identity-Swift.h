@@ -834,7 +834,6 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) enum UIBlurEffectStyle overlayBlurStyle;
 @property (nonatomic) CGFloat overlayBlurIntensity;
 @property (nonatomic) AVCaptureDevicePosition cameraPosition;
-@property (nonatomic, copy) NSString * _Nonnull environmentKey;
 @property (nonatomic, copy) NSString * _Nonnull overlayBrandingTitleText;
 @property (nonatomic, strong) UIColor * _Nonnull overlayBrandingTitleColor;
 @property (nonatomic, copy) NSString * _Nonnull overlayBrandingSubtitleText;
@@ -849,7 +848,7 @@ SWIFT_CLASS("_TtC19Sybrin_iOS_Identity27SybrinIdentityConfiguration")
 @property (nonatomic) BOOL enableHelpMessages;
 @property (nonatomic, copy) NSString * _Nullable correlationID;
 @property (nonatomic, copy) NSString * _Nullable customAuthorizationToken;
-- (nonnull instancetype)initWithLicense:(NSString * _Nonnull)license OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLicense:(NSString * _Nonnull)license environmentKey:(NSString * _Nonnull)environmentKey OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

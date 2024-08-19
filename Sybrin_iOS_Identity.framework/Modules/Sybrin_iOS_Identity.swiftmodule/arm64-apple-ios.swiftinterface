@@ -631,6 +631,7 @@ extension Sybrin_iOS_Identity.Rectangle : Swift.Equatable {
   }
 }
 @objc final public class SybrinIdentityConfiguration : ObjectiveC.NSObject, Sybrin_iOS_Common.SybrinCommonConfiguration {
+  final public var environmentKey: Swift.String
   @objc final public var license: Swift.String {
     @objc get
   }
@@ -643,7 +644,6 @@ extension Sybrin_iOS_Identity.Rectangle : Swift.Equatable {
   @objc final public var overlayBlurStyle: UIKit.UIBlurEffect.Style
   @objc final public var overlayBlurIntensity: CoreFoundation.CGFloat
   @objc final public var cameraPosition: AVFoundation.AVCaptureDevice.Position
-  @objc final public var environmentKey: Swift.String
   @objc final public var overlayBrandingTitleText: Swift.String
   @objc final public var overlayBrandingTitleColor: UIKit.UIColor
   @objc final public var overlayBrandingSubtitleText: Swift.String
@@ -659,7 +659,7 @@ extension Sybrin_iOS_Identity.Rectangle : Swift.Equatable {
   @objc final public var correlationID: Swift.String?
   @objc final public var customAuthorizationToken: Swift.String?
   final public var language: Sybrin_iOS_Identity.Language?
-  @objc public init(license: Swift.String)
+  @objc public init(license: Swift.String, environmentKey: Swift.String)
   @objc deinit
 }
 public enum Language : Swift.Int, Swift.RawRepresentable {
