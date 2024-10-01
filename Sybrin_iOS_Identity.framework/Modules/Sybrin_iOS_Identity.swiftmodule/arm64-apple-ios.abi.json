@@ -2991,13 +2991,6 @@
         "name": "Sybrin_iOS_Common",
         "printedName": "Sybrin_iOS_Common",
         "declKind": "Import",
-        "moduleName": "Sybrin_iOS_Identity"
-      },
-      {
-        "kind": "Import",
-        "name": "Sybrin_iOS_Common",
-        "printedName": "Sybrin_iOS_Common",
-        "declKind": "Import",
         "moduleName": "Sybrin_iOS_Identity",
         "declAttributes": [
           "RawDocComment"
@@ -15065,13 +15058,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Sybrin_iOS_Common",
-        "printedName": "Sybrin_iOS_Common",
-        "declKind": "Import",
-        "moduleName": "Sybrin_iOS_Identity"
       },
       {
         "kind": "Import",
@@ -32542,203 +32528,203 @@
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 544,
+      "offset": 519,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 548,
+      "offset": 523,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 706,
+      "offset": 681,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 710,
+      "offset": 685,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
+      "offset": 843,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 872,
+      "offset": 847,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1059,
+      "offset": 1034,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1063,
+      "offset": 1038,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1295,
+      "offset": 1270,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1469,
+      "offset": 1444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1501,
+      "offset": 1476,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1694,
+      "offset": 1669,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1712,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1794,
       "length": 17,
       "value": "\"CGImage was nil\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "FloatLiteral",
-      "offset": 2030,
+      "offset": 2005,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "BooleanLiteral",
-      "offset": 2599,
+      "offset": 2574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 2725,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2771,
+      "offset": 2746,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2940,
+      "offset": 2915,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2964,
+      "offset": 2939,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3308,
+      "offset": 3283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3313,
+      "offset": 3288,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3935,
+      "offset": 3910,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3951,
+      "offset": 3926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 4778,
+      "offset": 4753,
       "length": 25,
       "value": "\"CIPerspectiveCorrection\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 4925,
+      "offset": 4900,
       "length": 14,
       "value": "\"inputTopLeft\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 5061,
+      "offset": 5036,
       "length": 15,
       "value": "\"inputTopRight\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 5201,
+      "offset": 5176,
       "length": 18,
       "value": "\"inputBottomRight\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Extensions\/UIImage.swift",
       "kind": "StringLiteral",
-      "offset": 5343,
+      "offset": 5318,
       "length": 17,
       "value": "\"inputBottomLeft\""
     },
@@ -47914,28 +47900,28 @@
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/MLKitHandler.swift",
       "kind": "StringLiteral",
-      "offset": 3857,
+      "offset": 3832,
       "length": 63,
       "value": "\"Realtime Face Detection failed: \""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/MLKitHandler.swift",
       "kind": "StringLiteral",
-      "offset": 3919,
+      "offset": 3894,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/MLKitHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 10261,
+      "offset": 10236,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Handlers\/MLKitHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 10313,
+      "offset": 10288,
       "length": 5,
       "value": "false"
     },
@@ -52723,168 +52709,168 @@
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 553,
+      "offset": 552,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 597,
+      "offset": 596,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 764,
+      "offset": 763,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 834,
+      "offset": 833,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 1030,
+      "offset": 1029,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1634,
+      "offset": 1633,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 1732,
+      "offset": 1731,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 1819,
+      "offset": 1818,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2056,
+      "offset": 2055,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2129,
+      "offset": 2128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 2200,
+      "offset": 2199,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 2489,
+      "offset": 2488,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "BooleanLiteral",
-      "offset": 3523,
+      "offset": 3522,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 3861,
+      "offset": 3860,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 4493,
+      "offset": 4492,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 4526,
+      "offset": 4525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 4607,
+      "offset": 4606,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 4634,
+      "offset": 4633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 4712,
+      "offset": 4711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 5075,
+      "offset": 5074,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "StringLiteral",
-      "offset": 5134,
+      "offset": 5133,
       "length": 12,
       "value": "\"Found Face\""
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 5329,
+      "offset": 5328,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 5522,
+      "offset": 5521,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/default\/Applications\/Jenkins\/workspace\/Innovations\/Sybrin.iOS.SDK\/Sybrin.iOS.Identity\/Countries\/Generic\/Document\/Scan Phases\/GenericDocumentScanPhase.swift",
       "kind": "IntegerLiteral",
-      "offset": 5609,
+      "offset": 5608,
       "length": 1,
       "value": "0"
     },
