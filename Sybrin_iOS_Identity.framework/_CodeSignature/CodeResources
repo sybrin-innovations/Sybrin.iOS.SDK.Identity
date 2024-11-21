@@ -48,58 +48,6 @@
 		<data>
 		VXxTtFYLbixbHWxtoCrWv5PsF8s=
 		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
-		<data>
-		96Uw5p4tLIiDbN11Du0p0c5xqE8=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLlefteyeclosed_200.emd</key>
-		<data>
-		KBTvwnLXsoe2PIlGUwZzMUOp5k8=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLrighteyeclosed_200.emd</key>
-		<data>
-		fW6O7h6Je5DNmNrbOeCGmAixyLI=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
-		<data>
-		7aB1kj7gBhWUb0tpGJpXd5l6YbE=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
-		<data>
-		trY9XrpS4DxHzs3eHljZHIJNHrI=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_accgray.pb</key>
-		<data>
-		tq7fRawRQ359i/c0FEVvpQ6Oee0=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
-		<data>
-		DP+qJf0czliL6znGLVx90ASNzCY=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
-		<data>
-		oseYQ/EQxo7JsNpdNgo4YVLh7a4=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/contours.tfl</key>
-		<data>
-		PaAh9+zFw3Is4fLMn5iQsLG5M34=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_gray_v1.tflite</key>
-		<data>
-		VCp0NyrYJWQnYbGaxVv0Vzy0IeA=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_v1.tflite</key>
-		<data>
-		AHaxev+fV4YGoIDboAUFlxfISmY=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_gray_v1.tflite</key>
-		<data>
-		Rd53RFFpKHZNvbiDaE2p4XxjbY0=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_v1.tflite</key>
-		<data>
-		RxtbTN3LjpFChp3tmniX3KD+dsE=
-		</data>
 		<key>Headers/Sybrin_iOS_Identity-Swift.h</key>
 		<data>
 		ILXkns2+EzFL2mJ0gEf4IpYySZs=
@@ -114,15 +62,15 @@
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ZT4md+YEMAvoUksuTE4lclNt/70=
+		YCygSuaCBlXM6DKrlk2coXUEkHg=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		QPRqz78brX+AeS52zOKN0vvEqmo=
+		3uees+NkJOHnpRLY3UqxxgJKq94=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		LIaiXlISoRA4dqyBCcdRp5LGHAM=
+		UsQsQHisjDX0oMqVRJYDt0awbI0=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -130,11 +78,11 @@
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LIaiXlISoRA4dqyBCcdRp5LGHAM=
+		UsQsQHisjDX0oMqVRJYDt0awbI0=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZisK8mkyv7aNrrm8WMbOqUccN44=
+		VUvekRqg1j8kram2htBNlRRKeAU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -247,97 +195,6 @@
 			yab06VwxgfTBfIymvNpUJQ/uGKHYkHM9dOh1JedZwsw=
 			</data>
 		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8A8lZEpijnOMFV9JPQcq8UPyU8v5nwi/SCnL5dT0NRw=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLlefteyeclosed_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0xIT5PJf+LIXgeeG/YnO3lkX75s/vlC99V1IOvE27e0=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/BCLrighteyeclosed_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y8oL2DjlGXdImtrbgKC+AWxaoLe2kPvDiaBkWqzP5P8=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GPUWPTljgtSJXTVgycbTYCnq7x2KeXdmxeP3VnPNnuM=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DtXIUoL5QNFKVyOmwK8F+cKr1Okww8TwvloHI203QRE=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_accgray.pb</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8K2wTXshtNmImTKmLw7/En7tsn0vhTQqkBRBU8oLgbE=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CUNCXfGzUODFinvmaL4flC6sM4wZjhpPFoWco+Eif0U=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TyXMFC6WtfIbMjbSFmwuZikgaB8dI5QtJRDpjIr27Nw=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/contours.tfl</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hBYLwMSnSVF+Yvk8ssaKuP9J3lcfcOttFgJUypoHicA=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_gray_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ekzwnGrkp1gUTUK/NbmiapWYfjxYQdDcORCVaYKZ2as=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OvuTDu3I0dQENEgCgdO16M7EwwTlLTT9/IqVCDQLtxk=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_gray_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IVEbvtJxoKkri5ORjg+I9u+70RWjbRVV8GHO4TH2qzw=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
-			</data>
-		</dict>
 		<key>Headers/Sybrin_iOS_Identity-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -356,21 +213,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRMCfzXuYk2Bs9JCgfgGu7dGRS7i7p0c3zMDPHeaZjU=
+			guB0IyICC/DE7LGLcD6H+aLSRXZQCFdDSFPUeKaM6FM=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5HpD1tqB0ZO2nJPZrnVlUB+pBFXwz+gogzgrPFgd788=
+			7wg9GbAOzVqH8r0fEVvGdzv0OvBMQGvi3HSs90BHhN8=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wpg+RbotNrOcXMuRjWlu8O/oZ18OshoxdY49hDVwq6c=
+			yUELRk1EC/WQx9Gi8K7JYIVOVn5wN3geqrzOdat2Aac=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -384,14 +241,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wpg+RbotNrOcXMuRjWlu8O/oZ18OshoxdY49hDVwq6c=
+			yUELRk1EC/WQx9Gi8K7JYIVOVn5wN3geqrzOdat2Aac=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rkJk+SlnO+A/WoQqzuU95fYwJ9Ex0c9gFGk2gyXNPCk=
+			79JmaovZQouHyii9Lb7CRpZzDVkzDDpZqX+gLDbWE7o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

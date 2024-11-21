@@ -7,10 +7,10 @@ import CommonCrypto
 import CoreGraphics
 import CoreImage
 import CoreML
+import CoreMedia
 import CoreMotion
 import DeveloperToolsSupport
 import Foundation
-import MLKit
 import Swift
 import SwiftUI
 import Sybrin_iOS_Common
@@ -659,6 +659,9 @@ extension Sybrin_iOS_Identity.Rectangle : Swift.Equatable {
   @objc final public var correlationID: Swift.String?
   @objc final public var customAuthorizationToken: Swift.String?
   final public var language: Sybrin_iOS_Identity.Language?
+  final public var enableImageQualityAssessment: Swift.Bool
+  final public var apiVerion: Sybrin_iOS_Identity.APIVersion?
+  final public var extractionHeaders: [Swift.String : Any]
   @objc public init(license: Swift.String, environmentKey: Swift.String)
   @objc deinit
 }
@@ -670,6 +673,17 @@ public enum Language : Swift.Int, Swift.RawRepresentable {
     get
   }
   public init?(rawValue: Sybrin_iOS_Identity.Language.RawValue)
+}
+public enum APIVersion {
+  case V1
+  case V2
+  case V3
+  case V4
+  public static func == (a: Sybrin_iOS_Identity.APIVersion, b: Sybrin_iOS_Identity.APIVersion) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc public enum DocumentType : Swift.Int, Swift.CaseIterable {
   case Document
@@ -1121,6 +1135,8 @@ extension Sybrin_iOS_Identity.HasBackSide : Swift.Hashable {}
 extension Sybrin_iOS_Identity.HasBackSide : Swift.RawRepresentable {}
 extension Sybrin_iOS_Identity.Language : Swift.Equatable {}
 extension Sybrin_iOS_Identity.Language : Swift.Hashable {}
+extension Sybrin_iOS_Identity.APIVersion : Swift.Equatable {}
+extension Sybrin_iOS_Identity.APIVersion : Swift.Hashable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.Equatable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.Hashable {}
 extension Sybrin_iOS_Identity.DocumentType : Swift.RawRepresentable {}
