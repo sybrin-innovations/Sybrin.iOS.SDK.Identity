@@ -58,15 +58,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vcJWn4GZBe/SFpQU8CJN5PYHjoE=
+		9opFTLo7NXGksEidi3NTij46i7k=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ueYRnLWIfapmjAj7FeYPpi/QcQc=
+		jfFbhnnlzVEUyS4/x4envRgQfsM=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qIDVS9ZacgmLMOdXp0mAt63x04s=
+		Zeq2Ee6lNpQE5Vd9RUyH/68I2C4=
 		</data>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -213,14 +213,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKUAPzSZV3CVFOXDxaOZHUDxpw+yDqfFTGmN1UHcsns=
+			dpdIkQcycsUWS37LqD4nzui9ExbMKN+6IQILntMmOrA=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5UhBq4zpdF2pUz8geZRae/HVwo9+nAgKdsWz/An/D8E=
+			kAC2uPfEfC8PjiCwMstDcvtXm+k/0YP2t6GxcQE6F2k=
 			</data>
 		</dict>
 		<key>Modules/Sybrin_iOS_Identity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
